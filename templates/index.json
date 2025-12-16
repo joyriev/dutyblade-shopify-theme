@@ -8,6 +8,22 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "home_hero_7TVE9P": {
+      "type": "home-hero",
+      "name": "Homepage Hero",
+      "settings": {
+        "background_color": "#fcfbf9",
+        "title": "Homepage Hero",
+        "subtitle": "Homepage Hero",
+        "button_text": "GET NORDIC GLADE",
+        "button_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "home_hero_7TVE9P"
+  ]
 }
