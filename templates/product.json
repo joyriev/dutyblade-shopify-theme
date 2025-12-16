@@ -11,6 +11,20 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "blocks": {
+        "title_DkyBTh": {
+          "type": "title",
+          "settings": {}
+        },
+        "reactive_atc_LBDQE9": {
+          "type": "reactive_atc",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_DkyBTh",
+        "reactive_atc_LBDQE9"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
