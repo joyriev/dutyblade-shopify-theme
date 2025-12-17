@@ -14,6 +14,7 @@
       "name": "Homepage Hero",
       "settings": {
         "background_color": "#fcfbf9",
+        "background_image": "shopify://shop_images/pdp_lifestyle_universal.png",
         "title": "Homepage Hero",
         "subtitle": "Homepage Hero",
         "button_text": "GET NORDIC GLADE",
