@@ -34,7 +34,7 @@
             "month_label": "%b",
             "date_size": 16,
             "date_color": "#000000",
-            "timer_text": "ORDER WITHIN <b>[HOURS] HOURS [MINUTES] MINUTES?</b>",
+            "timer_text": "ORDER WITHIN <strong>[HOURS] HOURS [MINUTES] MINUTES?</strong>",
             "hours": 1,
             "minutes": 30,
             "timer_size": 16,
@@ -60,6 +60,33 @@
             "icon_4": "truck",
             "heading_4": ""
           }
+        },
+        "collapsible_tab_FAAFhb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "🔍 Product Details",
+            "icon": "none",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_bKn87j": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "🚚 Shipping & Delivery",
+            "icon": "none",
+            "content": "<p>We offer free shipping on all orders across the continental US. Orders are processed within 1–2 business days, and you’ll receive tracking information as soon as your package leaves our facility.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_T6Fk9z": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "🔄 Return & Refund Policy",
+            "icon": "none",
+            "content": "<p>Not satisfied? No problem. We provide a hassle-free 100-day return policy and a full refund if you’re not completely happy with your shave. Just reach out to our support team to start the process.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -67,7 +94,10 @@
         "reactive_atc_LBDQE9",
         "payment_badges_FkCwVc",
         "delivery_deadline_CQHJwz",
-        "icon_with_text_ytpGUH"
+        "icon_with_text_ytpGUH",
+        "collapsible_tab_FAAFhb",
+        "collapsible_tab_bKn87j",
+        "collapsible_tab_T6Fk9z"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -83,30 +113,9 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "1765967710d850e812": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_apqdMi": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_apqdMi"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
-    "main",
-    "1765967710d850e812"
+    "main"
   ]
 }
