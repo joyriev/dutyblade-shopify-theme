@@ -14,6 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "link_list_qwPhpX": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Policies",
+            "menu": "footer-help"
+          }
+        },
         "link_list_Fhdw8K": {
           "type": "link_list",
           "settings": {
@@ -30,6 +37,7 @@
         }
       },
       "block_order": [
+        "link_list_qwPhpX",
         "link_list_Fhdw8K",
         "text_RP9BNp"
       ],
