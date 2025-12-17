@@ -27,7 +27,7 @@
       "type": "popular-products",
       "name": "Popular Products",
       "settings": {
-        "background_color": "#0f172a",
+        "background_color": "#ffffff",
         "title": "Popular Products",
         "collection": "home-page",
         "padding_top": 72,
