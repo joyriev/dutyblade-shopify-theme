@@ -20,8 +20,8 @@
 
 <div id="{{ section.id }}" class="section-{{ section.id }}-padding bg-center-top bg-cover">
   <div class="page-width">
-    <div class="mx-auto max-w-[700px] md:px-10 text-center">
-      <h1 class="text-3xl md:text-6xl font-black text-white mt-0">{{ section.settings.title }}</h1>
+    <div class="mx-auto max-w-[780px] md:px-10 text-center">
+      <h1 class="text-3xl !leading-tight md:text-6xl font-black text-white mt-0">{{ section.settings.title }}</h1>
       <p class="text-lg font-medium text-white mb-8">{{ section.settings.subtitle }}</p>
       {% comment %} <p class="text-lg font-medium">Save {{ chosen_product.price | times: 25.85323165 | round | money_without_trailing_zeros }} over 10 years. No subscriptions. No cartridge</p> {% endcomment %}
       {% comment %} <a href="{{ section.settings.button_link }}" class="button">Get Yours for {{ chosen_product.price | money_with_currency }}</a> {% endcomment %}
