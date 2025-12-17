@@ -33,10 +33,58 @@
         "padding_top": 72,
         "padding_bottom": 72
       }
+    },
+    "image_with_text_3gzg7M": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JwzNPL": {
+          "type": "heading",
+          "settings": {
+            "heading": "REMEMBER WHEN THEY CALLED YOU TOXIC?",
+            "heading_size": "h1"
+          }
+        },
+        "text_eYk7Jk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We haven’t forgotten how they tried to redefine masculinity. Ranger Core was born to push back. We believe in strength, honor, and traditional values. No lectures, just a superior shave.<br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_bPrTyE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JwzNPL",
+        "text_eYk7Jk",
+        "button_bPrTyE"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "home_hero_7TVE9P",
-    "popular_products_3gqnEi"
+    "popular_products_3gqnEi",
+    "image_with_text_3gzg7M"
   ]
 }
