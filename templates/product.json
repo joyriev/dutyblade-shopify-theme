@@ -87,6 +87,31 @@
             "content": "<p>Not satisfied? No problem. We provide a hassle-free 100-day return policy and a full refund if you’re not completely happy with your shave. Just reach out to our support team to start the process.</p>",
             "page": ""
           }
+        },
+        "product_reviews_W3CkbE": {
+          "type": "product_reviews",
+          "settings": {
+            "show_placeholder_image": true,
+            "reviewer_1": "<em>Reviewer 1</em>",
+            "text_1": "<p>Show what your customers had to say about their experience.</p>",
+            "reviewer_2": "<em>Reviewer 2</em>",
+            "text_2": "<p>Show what your customers had to say about their experience.</p>",
+            "reviewer_3": "<em>Reviewer 3</em>",
+            "text_3": "<p>Show what your customers had to say about their experience.</p>",
+            "text_color": "#000000",
+            "text_alignment": "center",
+            "text_size": 18,
+            "display_stars": true,
+            "star_color": "#ffcc00",
+            "star_size": 16,
+            "star_placement": "below",
+            "image_shape": "circle",
+            "image_size": 100,
+            "show_card": true,
+            "background_color": "#ffffff",
+            "auto_scroll": true,
+            "side": "right"
+          }
         }
       },
       "block_order": [
@@ -97,7 +122,8 @@
         "icon_with_text_ytpGUH",
         "collapsible_tab_FAAFhb",
         "collapsible_tab_bKn87j",
-        "collapsible_tab_T6Fk9z"
+        "collapsible_tab_T6Fk9z",
+        "product_reviews_W3CkbE"
       ],
       "settings": {
         "enable_sticky_info": true,
