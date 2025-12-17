@@ -11,26 +11,32 @@
 </style>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+{% assign selling_points = product.metafields.custom.selling_points.value %}
+
+{% if selling_points %}
+  <ul class="list-none pl-0">
+    {% for point in selling_points %}
+      <li>✅ {{ point }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+
 {% if product.variants.size > 1 %}
   <div x-data>
+    <div class="mb-2">
+      Package:
+      <span x-html="$store.pdpExtra.variantTitle"></span>
+    </div>
     <div class="flex gap-2 flex-wrap">
       {% for variant in product.variants %}
         <button
-          @click="$store.pdpExtra.selectedVariant = '{{ variant.id }}'; $store.pdpExtra.variantPrice = '{{ variant.price | money }}'; $store.pdpExtra.variantCompareAtPrice = '{{ variant.compare_at_price | money }}'; $store.pdpExtra.variantTitle = '{{ variant.title }}'; $store.pdpExtra.updateVariantImage('{{ variant.image |  image_url: width: 520, height: 520 }}')"
-          class="p-0 border-2 border-solid bg-white rounded-full size-14 flex items-center justify-center cursor-pointer"
-          :class="$store.pdpExtra.selectedVariant === '{{ variant.id }}' ? 'border-blue-700' : 'border-transparent'">
-          <img
-            class="rounded-full"
-            src="{{ variant.image |  image_url: width: 100, height: 100 }}"
-            alt="{{ variant.title }}"
-            height="48"
-            width="48">
+          @click="$store.pdpExtra.selectedVariant = '{{ variant.id }}'; $store.pdpExtra.variantPrice = '{{ variant.price | money }}'; $store.pdpExtra.variantCompareAtPrice = '{{ variant.compare_at_price | money }}'; $store.pdpExtra.variantTitle = '{{ variant.title }}';"
+          class="p-0 border-2 border-solid bg-white rounded-full py-2 px-3 flex items-center justify-center cursor-pointe font-semibold"
+          :class="$store.pdpExtra.selectedVariant === '{{ variant.id }}' ? 'bg-[#0F172A] text-white' : 'bg-white text-[#0F172A]'">
+          {{ variant.title }}
         </button>
       {% endfor %}
-    </div>
-    <div class="mt-2">
-      Color:
-      <span x-html="$store.pdpExtra.variantTitle"></span>
     </div>
   </div>
 {% endif %}
@@ -294,11 +300,6 @@
                 } else {
                     this.accessories.push(id);
                 }
-            },
-            updateVariantImage(imageUrl) {
-              const img = document.querySelector('.product_gallery_image');
-              img.setAttribute('src', imageUrl);
-              img.setAttribute('srcset', `${imageUrl} 1x`);
             },
             async addToCart () {
                 this.addingToCart = true;
