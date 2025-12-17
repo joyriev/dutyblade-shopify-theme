@@ -50,132 +50,9 @@
   {% endif %}
 </div>
 
-{% if product.tags contains 'blades' %}
-  <div class="bg-blue-100 p-4 rounded-lg" x-data>
-    <h3 class="text-lg font-semibold !mt-0 !mb-2">Blade Options:</h3>
-    <div class="flex items-center justify-between mb-2">
-      <div class="flex items-center gap-1">
-        <input
-          class="!size-5 m-0"
-          id="5blades"
-          type="checkbox"
-          disabled
-          checked>
-        <label for="5blades">5 Blades</label>
-      </div>
-      <div>
-        <span class="italic text-slate-600">Included Free</span>
-      </div>
-    </div>
-
-    <div class="flex items-center justify-between mb-2 leading-snug">
-      <div class="flex items-center gap-1">
-        <input
-          class="!size-5 m-0"
-          id="100blades"
-          type="checkbox"
-          :checked="$store.pdpExtra.bladeOption === '{{ hundred_product.selected_or_first_available_variant.id }}'"
-          @change="$store.pdpExtra.bladeOption = ($store.pdpExtra.bladeOption === '{{ hundred_product.selected_or_first_available_variant.id }}') ? '' : '{{ hundred_product.selected_or_first_available_variant.id }}'">
-        <label for="100blades">{{ hundred_product.title }}</label>
-      </div>
-      <div class="flex items-center gap-2">
-        <span class="whitespace-nowrap">+{{ hundred_product.price | money }}</span>
-        <button @click="$store.pdpExtra.showModal = true; $store.pdpExtra.modalContentId = '{{ hundred_product.title | downcase | replace: ' ', '_' }}'" class="border-0 p-0 bg-transparent flex text-gray-700 cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-help-circle">
-            <circle
-              cx="12"
-              cy="12"
-              r="10"></circle>
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-            <line
-              x1="12"
-              y1="17"
-              x2="12.01"
-              y2="17"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="flex items-center justify-between leading-snug">
-      <div class="flex items-center gap-1">
-        <input
-          class="!size-5 m-0"
-          id="lifeBlades"
-          type="checkbox"
-          :checked="$store.pdpExtra.bladeOption === '{{ lifetime_product.selected_or_first_available_variant.id }}'"
-          @change="$store.pdpExtra.bladeOption = ($store.pdpExtra.bladeOption === '{{ lifetime_product.selected_or_first_available_variant.id }}') ? '' : '{{ lifetime_product.selected_or_first_available_variant.id }}'">
-        <label for="lifeBlades">{{ lifetime_product.title }}</label>
-      </div>
-      <div class="flex items-center gap-2">
-        <span class="whitespace-nowrap">+{{ lifetime_product.price | money }}</span>
-        <button @click="$store.pdpExtra.showModal = true; $store.pdpExtra.modalContentId = '{{ lifetime_product.title | downcase | replace: ' ', '_' }}'" class="border-0 p-0 bg-transparent flex text-gray-700 cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-help-circle">
-            <circle
-              cx="12"
-              cy="12"
-              r="10"></circle>
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-            <line
-              x1="12"
-              y1="17"
-              x2="12.01"
-              y2="17"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-{% endif %}
-
-<button
-  x-data
-  class="product-form__submit button button--full-width button--primary rounded-full leading-[50px]"
-  @click="$store.pdpExtra.addToCart()"
-  :disabled="$store.pdpExtra.addingToCart">
-  <span>
-    {{ 'products.product.add_to_cart' | t }}
-  </span>
-  <div class="loading__spinner" :class="!$store.pdpExtra.addingToCart ? 'hidden' : ''">
-    <svg
-      aria-hidden="true"
-      focusable="false"
-      class="spinner"
-      viewBox="0 0 66 66"
-      xmlns="http://www.w3.org/2000/svg">
-      <circle
-        class="path"
-        fill="none"
-        stroke-width="6"
-        cx="33"
-        cy="33"
-        r="30"></circle>
-    </svg>
-  </div>
-</button>
 
 <product-form
-  class="product-form fixed -left-[999px] -top-[999px]"
+  class="product-form"
   data-hide-errors="{{ gift_card_recipient_feature_active }}"
   data-section-id="{{ section.id }}">
   {%- form 'product'
@@ -196,13 +73,14 @@
       type="submit"
       name="add"
       value="1"
-      class="hidden_product_form_submit"
+      class="hidden_product_form_submit button button--full-width"
       aria-label="Add to cart">
       <span>Add to cart</span>
       {%- render 'loading-spinner' -%}
     </button>
   {%- endform -%}
 </product-form>
+
 
 {% assign accessories = product.metafields.custom.accessories.value %}
 {% if accessories %}
@@ -301,49 +179,6 @@
                     this.accessories.push(id);
                 }
             },
-            async addToCart () {
-                this.addingToCart = true;
-                const items = [];
-
-                if(this.bladeOption){
-                  items.push({
-                    id: this.bladeOption,
-                    quantity: 1
-                  });
-                }
-
-                if (this.accessories.length > 0) {
-                  this.accessories.forEach(item => {
-                    items.push({
-                      id: item,
-                      quantity: 1
-                    });
-                  });
-                }
-
-                if (items.length > 0) {
-                  try {
-                    await fetch('/cart/add.js', {
-                      method: 'POST',
-                      headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                      },
-                      body: JSON.stringify({ items })
-                    });
-
-                  } catch (error) {
-                    console.error('Error adding items to cart:', error);
-                  } 
-                }
-
-                const hiddenSubmit = document.querySelector('.hidden_product_form_submit');
-                hiddenSubmit.click();
-
-                setTimeout(() => {
-                  this.addingToCart = false;
-                }, 2000);
-            }
         })
     })
 </script>
