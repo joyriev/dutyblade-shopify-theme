@@ -19,11 +19,55 @@
         "reactive_atc_LBDQE9": {
           "type": "reactive_atc",
           "settings": {}
+        },
+        "payment_badges_FkCwVc": {
+          "type": "payment_badges",
+          "settings": {}
+        },
+        "delivery_deadline_CQHJwz": {
+          "type": "delivery_deadline",
+          "settings": {
+            "date_text": "Want it by [DATE]?",
+            "days": 2,
+            "date_format": "day, %e. month",
+            "day_label": "%A",
+            "month_label": "%b",
+            "date_size": 16,
+            "date_color": "#000000",
+            "timer_text": "ORDER WITHIN <b>[HOURS] HOURS [MINUTES] MINUTES?</b>",
+            "hours": 1,
+            "minutes": 30,
+            "timer_size": 16,
+            "timer_color": "#000000",
+            "text_layout": "col",
+            "text_alignment": "center"
+          }
+        },
+        "icon_with_text_ytpGUH": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical_2",
+            "desktop_icon_size": 40,
+            "desktop_font_size": 16,
+            "mobile_icon_size": 30,
+            "mobile_font_size": 12,
+            "icon_1": "box",
+            "heading_1": "Packed & Secured",
+            "icon_2": "return",
+            "heading_2": "Free & Easy Returns",
+            "icon_3": "truck",
+            "heading_3": "",
+            "icon_4": "truck",
+            "heading_4": ""
+          }
         }
       },
       "block_order": [
         "title_DkyBTh",
-        "reactive_atc_LBDQE9"
+        "reactive_atc_LBDQE9",
+        "payment_badges_FkCwVc",
+        "delivery_deadline_CQHJwz",
+        "icon_with_text_ytpGUH"
       ],
       "settings": {
         "enable_sticky_info": true,
