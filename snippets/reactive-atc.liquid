@@ -32,7 +32,7 @@
       {% for variant in product.variants %}
         <button
           @click="$store.pdpExtra.selectedVariant = '{{ variant.id }}'; $store.pdpExtra.variantPrice = '{{ variant.price | money }}'; $store.pdpExtra.variantCompareAtPrice = '{{ variant.compare_at_price | money }}'; $store.pdpExtra.variantTitle = '{{ variant.title }}';"
-          class="p-0 border-2 border-solid bg-white rounded-full py-2 px-3 flex items-center justify-center cursor-pointe font-semibold"
+          class="p-0 border-2 border-solid bg-white rounded-full py-2 px-3 flex items-center justify-center cursor-pointer font-semibold"
           :class="$store.pdpExtra.selectedVariant === '{{ variant.id }}' ? 'bg-[#0F172A] text-white' : 'bg-white text-[#0F172A]'">
           {{ variant.title }}
         </button>
