@@ -1,7 +1,5 @@
 {% liquid
   assign selected_variant = product.selected_or_first_available_variant
-  assign hundred_product = all_products['100-premium-blades']
-  assign lifetime_product = all_products['blades-for-life']
 %}
 
 <style>
@@ -81,104 +79,92 @@
   {%- endform -%}
 </product-form>
 
+{% assign accessories = collections['accessories'] %}
 
-{% assign accessories = product.metafields.custom.accessories.value %}
-{% if accessories %}
-  <div x-data class="p-4 pb-6">
+{% if accessories.products.length > 0 %}
+  <div x-data class="p-4 !mb-8 bg-white border border-solid border-gray-200 rounded-xl">
     <h3 class="text-lg font-semibold !my-0">Accessories:</h3>
     <p class="text-base mt-0 !mb-3">Accessories 20% off until {{ 'now' | date: "%s" | plus: 259200 | date: "%b %d" }} - Automatically applies in the cart.</p>
-    {% for item in accessories %}
-      <div class="flex items-center justify-between mb-2">
-        <div class="flex items-center gap-1">
-          <input
-            class="!size-5 m-0"
-            id="{{ item.id }}"
-            type="checkbox"
-            :checked="$store.pdpExtra.accessories.includes('{{ item.selected_or_first_available_variant.id }}')"
-            @change="$store.pdpExtra.addRemoveAccessories('{{ item.selected_or_first_available_variant.id }}')">
-          <label for="{{ item.id }}">{{ item.title }}</label>
+    {% for item in accessories.products %}
+      <div class="flex items-center gap-2 p-2 border border-solid border-gray-200 rounded-lg mb-2">
+        <img
+          class="rounded-lg"
+          src="{{ item.images.first |  image_url: width: 150 }}"
+          alt="{{ item.title }}"
+          height="60"
+          width="60">
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold line-clamp-1 my-0">{{ item.title }}</h3>
+          <span class="text-sm">+{{ item.price | money }}</span>
         </div>
-        <div class="flex items-center gap-2">
-          <span class="whitespace-nowrap">+{{ item.price | money }}</span>
-          <button @click="$store.pdpExtra.showModal = true; $store.pdpExtra.modalContentId = '{{ item.title | downcase | replace: ' ', '_' }}'" class="border-0 p-0 bg-transparent flex text-gray-700 cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-help-circle">
-              <circle
-                cx="12"
-                cy="12"
-                r="10"></circle>
-              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-              <line
-                x1="12"
-                y1="17"
-                x2="12.01"
-                y2="17"></line>
-            </svg>
-          </button>
+        <div class="p-1 rounded-full border border-solid border-gray-200 flex items-center justify-between gap-2">
+          <button
+            class="bg-[#0F172A] text-white size-6 rounded-full font-bold cursor-pointer border-0 disabled:opacity-50 disabled:cursor-not-allowed"
+            :disabled="$store.pdpExtra.accessoriesQuantity('{{ item.selected_or_first_available_variant.id }}') === 0"
+            @click="$store.pdpExtra.removeAccessories('{{ item.selected_or_first_available_variant.id }}')">-</button>
+          <span class="leading-none" x-text="$store.pdpExtra.accessoriesQuantity('{{ item.selected_or_first_available_variant.id }}')">1</span>
+          <button class="bg-[#0F172A] text-white size-6 rounded-full font-bold cursor-pointer border-0 disabled:opacity-50 disabled:cursor-not-allowed" @click="$store.pdpExtra.addAccessories('{{ item.selected_or_first_available_variant.id }}')">+</button>
         </div>
       </div>
     {% endfor %}
+    <button
+      class="product-form__submit button button--full-width button--primary rounded-full leading-[50px] mt-6 !mb-0"
+      @click="$store.pdpExtra.addToCart()"
+      :disabled="$store.pdpExtra.addingToCart">
+      <span>
+        Buy Now
+      </span>
+      <div class="loading__spinner" :class="!$store.pdpExtra.addingToCart ? 'hidden' : ''">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="spinner"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle
+            class="path"
+            fill="none"
+            stroke-width="6"
+            cx="33"
+            cy="33"
+            r="30"></circle>
+        </svg>
+      </div>
+    </button>
   </div>
 {% endif %}
 
 <script>
-
-    const modalContents = {
-      {% for pa in accessories %}
-        "{{ pa.title | downcase | replace: ' ', '_' }}": {
-          "image": "{{ pa.images.first | image_url: width: 450 }}",
-          "title": "{{ pa.title }}",
-          "content": `{{ pa.description }}`
-        },
-      {% endfor %}
-      "{{ hundred_product.title |  downcase |  replace: ' ', '_' }}": {
-        "image": "{{ hundred_product.images.first | image_url: width: 450 }}",
-        "title": "{{ hundred_product.title }}",
-        "content": `{{ hundred_product.description }}`
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('pdpExtra', {
+      selectedVariant: "{{ selected_variant.id }}",
+      variantPrice: "{{ selected_variant.price | money }}",
+      variantCompareAtPrice: "{{ selected_variant.compare_at_price | money }}",
+      variantTitle: "{{ selected_variant.title }}",
+      accessories: [],
+      addingToCart: false,
+      accessoriesQuantity (id) { 
+        const accessory = this.accessories.find(item => item.id === id);
+        return accessory ? accessory.quantity : 0;
       },
-      "{{ lifetime_product.title |  downcase |  replace: ' ', '_' }}": {
-        "image": "{{ lifetime_product.images.first | image_url: width: 450 }}",
-        "title": "{{ lifetime_product.title }}",
-        "content": `{{ lifetime_product.description }}`
+      addAccessories (id) {
+        const existingIndex = this.accessories.findIndex(item => item.id === id);
+        if (existingIndex >= 0) {
+          this.accessories[existingIndex].quantity += 1;
+        } else {
+          this.accessories.push({ id, quantity: 1 });
+        }
+      },
+      removeAccessories (id) {
+        const existingIndex = this.accessories.findIndex(item => item.id === id);
+        if (existingIndex >= 0) {
+          if (this.accessories[existingIndex].quantity > 1) {
+            this.accessories[existingIndex].quantity -= 1;
+          } else {
+            this.accessories = this.accessories.filter((item) => item.id !== id);
+          }
+        }
       }
-    };
-
-    document.addEventListener('alpine:init', () => {
-        Alpine.store('pdpExtra', {
-            selectedVariant: "{{ selected_variant.id }}",
-            variantPrice: "{{ selected_variant.price | money }}",
-            variantCompareAtPrice: "{{ selected_variant.compare_at_price | money }}",
-            variantTitle: "{{ selected_variant.title }}",
-            bladeOption: "",
-            accessories: [],
-            addingToCart: false,
-            showModal: false,
-            modalContentId: "",
-            get modalImage () {
-              return modalContents[this.modalContentId].image;
-            },
-            get modalTitle () {
-              return modalContents[this.modalContentId].title;
-            },
-            get modalContent () {
-              return modalContents[this.modalContentId].content;
-            },
-            addRemoveAccessories (id) {
-                if (this.accessories.includes(id)) {
-                    this.accessories = this.accessories.filter((item) => item !== id);
-                } else {
-                    this.accessories.push(id);
-                }
-            },
-        })
     })
+  })
 </script>
