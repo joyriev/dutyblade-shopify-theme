@@ -170,7 +170,7 @@
       variantPrice: "{{ selected_variant.price | money }}",
       variantCompareAtPrice: "{{ selected_variant.compare_at_price | money }}",
       variantTitle: "{{ selected_variant.title }}",
-      quantity: 1,
+      quantity: 4,
       getPrice (package) {
         return offerPrices[this.selectedVariant][package].price
       },
