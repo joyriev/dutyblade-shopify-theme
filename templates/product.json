@@ -147,6 +147,17 @@
         "padding_bottom": 36
       }
     },
+    "popular_products_NiT3Fm": {
+      "type": "popular-products",
+      "name": "Popular Products",
+      "settings": {
+        "background_color": "#fcfbf9",
+        "title": "Related Products",
+        "collection": "home-page",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collapsible_content_xgLkqk": {
       "type": "collapsible-content",
       "blocks": {
@@ -212,6 +223,7 @@
   },
   "order": [
     "main",
+    "popular_products_NiT3Fm",
     "collapsible_content_xgLkqk"
   ]
 }
