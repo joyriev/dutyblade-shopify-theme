@@ -16,6 +16,12 @@
           "type": "title",
           "settings": {}
         },
+        "custom_liquid_yLNzLq": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- Start of Judge.me code --> \n  <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'> \n    {{ product.metafields.judgeme.badge }} \n  </div> \n<!-- End of Judge.me code -->"
+          }
+        },
         "reactive_atc_LBDQE9": {
           "type": "reactive_atc",
           "settings": {}
@@ -116,6 +122,7 @@
       },
       "block_order": [
         "title_DkyBTh",
+        "custom_liquid_yLNzLq",
         "reactive_atc_LBDQE9",
         "payment_badges_FkCwVc",
         "delivery_deadline_CQHJwz",
