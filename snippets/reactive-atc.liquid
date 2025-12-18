@@ -164,6 +164,37 @@
             this.accessories = this.accessories.filter((item) => item.id !== id);
           }
         }
+      },
+      async addToCart () {
+        this.addingToCart = true;
+
+        const items = this.accessories.map(accessory => ({
+          id: accessory.id,
+          quantity: accessory.quantity
+        }));
+
+        if (items.length > 0) {
+          try {
+            await fetch('/cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify({ items })
+            });
+
+          } catch (error) {
+            console.error('Error adding items to cart:', error);
+          } 
+        }
+
+        const hiddenSubmit = document.querySelector('.hidden_product_form_submit');
+        hiddenSubmit.click();
+
+        setTimeout(() => {
+          this.addingToCart = false;
+        }, 2000);
       }
     })
   })
