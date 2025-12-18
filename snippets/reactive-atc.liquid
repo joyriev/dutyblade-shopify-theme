@@ -61,7 +61,7 @@
       type="submit"
       name="add"
       value="1"
-      class="hidden_product_form_submit button button--full-width"
+      class="hidden_product_form_submit button button--full-width shadow-xl"
       aria-label="Add to cart">
       <span>ADD TO CART</span>
       {%- render 'loading-spinner' -%}
@@ -98,7 +98,7 @@
       </div>
     {% endfor %}
     <button
-      class="product-form__submit button button--full-width button--primary rounded-full leading-[50px] mt-6 !mb-0"
+      class="product-form__submit button button--full-width button--primary rounded-full leading-[50px] mt-6 !mb-0 shadow-xl"
       @click="$store.pdpExtra.addToCart()"
       :disabled="$store.pdpExtra.addingToCart">
       <span>
