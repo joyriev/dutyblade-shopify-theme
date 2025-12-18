@@ -30,7 +30,7 @@
       {% for variant in product.variants %}
         <button
           @click="$store.pdpExtra.selectedVariant = '{{ variant.id }}'; $store.pdpExtra.variantPrice = '{{ variant.price | money }}'; $store.pdpExtra.variantCompareAtPrice = '{{ variant.compare_at_price | money }}'; $store.pdpExtra.variantTitle = '{{ variant.title }}';"
-          class="p-0 border-2 border-solid bg-white rounded-full py-2 px-3 flex items-center justify-center cursor-pointer font-semibold"
+          class="p-0 border-2 border-solid rounded-full py-2 px-3 flex items-center justify-center cursor-pointer font-semibold"
           :class="$store.pdpExtra.selectedVariant === '{{ variant.id }}' ? 'bg-[#0F172A] text-white' : 'bg-white text-[#0F172A]'">
           {{ variant.title }}
         </button>
@@ -38,16 +38,6 @@
     </div>
   </div>
 {% endif %}
-
-<div x-data class="flex items-center gap-2">
-  <div class="text-xl text-black" x-html="$store.pdpExtra.variantPrice">{{ product.price | money }}</div>
-  {% if product.price < product.compare_at_price %}
-    <div class="text-gray-500 line-through" x-html="$store.pdpExtra.variantCompareAtPrice">
-      {{ product.compare_at_price | money }}
-    </div>
-  {% endif %}
-</div>
-
 
 <product-form
   class="product-form"
@@ -73,7 +63,7 @@
       value="1"
       class="hidden_product_form_submit button button--full-width"
       aria-label="Add to cart">
-      <span>Add to cart</span>
+      <span>ADD TO CART</span>
       {%- render 'loading-spinner' -%}
     </button>
   {%- endform -%}
@@ -112,7 +102,7 @@
       @click="$store.pdpExtra.addToCart()"
       :disabled="$store.pdpExtra.addingToCart">
       <span>
-        Buy Now
+        SHOP NOW
       </span>
       <div class="loading__spinner" :class="!$store.pdpExtra.addingToCart ? 'hidden' : ''">
         <svg
