@@ -14,8 +14,8 @@
       "name": "Homepage Hero",
       "settings": {
         "background_color": "#0f172a",
-        "background_image": "shopify://shop_images/banner_1.png",
-        "mobile_background_image": "shopify://shop_images/banner_1_mobile.png",
+        "background_image": "shopify://shop_images/header_v2_1.png",
+        "mobile_background_image": "shopify://shop_images/header_v2_1.png",
         "title": "THEY LECTURED YOU. WE RESPECT YOU.",
         "subtitle": "Experience the shave built on values, not lecturers. Join the brotherhood.",
         "button_text": "SHOP THE FREEDOM KIT",
