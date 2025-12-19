@@ -154,88 +154,51 @@
         "padding_bottom": 36
       }
     },
-    "us_vs_them_gnxT8p": {
+    "us_vs_them_t3V464": {
       "type": "us-vs-them",
       "blocks": {
-        "us_item_VBFfnf": {
-          "type": "us_item",
+        "comparison_row_wzm73n": {
+          "type": "comparison_row",
           "settings": {
-            "text": "Premium Safety Razor"
+            "us_text": "Premium Safety Razor",
+            "them_text": "Plastic Cartridge Razor"
           }
         },
-        "us_item_RD9JaM": {
-          "type": "us_item",
+        "comparison_row_XegXBE": {
+          "type": "comparison_row",
           "settings": {
-            "text": "High-Quality Blades"
+            "us_text": "High-Quality Stainless Blades",
+            "them_text": "Expensive Disposable Refills"
           }
         },
-        "us_item_icjwg9": {
-          "type": "us_item",
+        "comparison_row_rhw7p3": {
+          "type": "comparison_row",
           "settings": {
-            "text": "Shaving Soap & Brush"
+            "us_text": "Traditional Shaving Soap",
+            "them_text": "Chemical-Filled Gel"
           }
         },
-        "us_item_Afgy9q": {
-          "type": "us_item",
+        "comparison_row_whLFqN": {
+          "type": "comparison_row",
           "settings": {
-            "text": "Supports Veterans"
+            "us_text": "Veteran-Owned & Operated",
+            "them_text": "Corporate Mass Production"
           }
         },
-        "us_item_CwKVhc": {
-          "type": "us_item",
+        "comparison_row_YmyKei": {
+          "type": "comparison_row",
           "settings": {
-            "text": "Lifetime Warranty"
-          }
-        },
-        "us_item_yGmzPq": {
-          "type": "us_item",
-          "settings": {
-            "text": "Made in USA"
-          }
-        },
-        "them_item_WftbFE": {
-          "type": "them_item",
-          "settings": {
-            "text": "Plastic Cartridge Razor"
-          }
-        },
-        "them_item_echpth": {
-          "type": "them_item",
-          "settings": {
-            "text": "Expensive Refills"
-          }
-        },
-        "them_item_Emefqn": {
-          "type": "them_item",
-          "settings": {
-            "text": "Chemical Shaving Gel"
-          }
-        },
-        "them_item_JdTVam": {
-          "type": "them_item",
-          "settings": {
-            "text": "Planned Obsolescence"
-          }
-        },
-        "them_item_wc4pAU": {
-          "type": "them_item",
-          "settings": {
-            "text": "Made Overseas"
+            "us_text": "Lifetime Warranty",
+            "them_text": "Planned Obsolescence"
           }
         }
       },
       "block_order": [
-        "us_item_VBFfnf",
-        "us_item_RD9JaM",
-        "us_item_icjwg9",
-        "us_item_Afgy9q",
-        "us_item_CwKVhc",
-        "us_item_yGmzPq",
-        "them_item_WftbFE",
-        "them_item_echpth",
-        "them_item_Emefqn",
-        "them_item_JdTVam",
-        "them_item_wc4pAU"
+        "comparison_row_wzm73n",
+        "comparison_row_XegXBE",
+        "comparison_row_rhw7p3",
+        "comparison_row_whLFqN",
+        "comparison_row_YmyKei"
       ],
       "name": "Us vs Them",
       "settings": {
@@ -305,7 +268,7 @@
     "rounded_cover_LfKNyh",
     "bigger_then_a_shave_nJQJzw",
     "more_than_a_shave_YrHad6",
-    "us_vs_them_gnxT8p",
+    "us_vs_them_t3V464",
     "image_and_text_mcrAUd"
   ]
 }
