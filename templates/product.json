@@ -161,9 +161,9 @@
         "feature_qYJ3q7": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icon2.png",
-            "title": "Luxury Shaving Foam",
-            "description": "Rich, protective lather with natural ingredients."
+            "icon_image": "shopify://shop_images/icons_quality.png",
+            "title": "Satisfaction Guarantee",
+            "description": "If it’s not a better shave, we’ll make it right."
           }
         },
         "feature_xJQxhW": {
@@ -187,87 +187,6 @@
     },
     "us_vs_them_Tknt7h": {
       "type": "us-vs-them",
-      "blocks": {
-        "us_item_AqUAYp": {
-          "type": "us_item",
-          "settings": {
-            "text": "Premium Safety Razor"
-          }
-        },
-        "us_item_f4d3JW": {
-          "type": "us_item",
-          "settings": {
-            "text": "High-Quality Blades"
-          }
-        },
-        "us_item_7pQM9i": {
-          "type": "us_item",
-          "settings": {
-            "text": "Shaving Soap & Brush"
-          }
-        },
-        "us_item_QnrNUx": {
-          "type": "us_item",
-          "settings": {
-            "text": "Supports Veterans"
-          }
-        },
-        "us_item_Wkt9BX": {
-          "type": "us_item",
-          "settings": {
-            "text": "Lifetime Warranty"
-          }
-        },
-        "us_item_HnU6w4": {
-          "type": "us_item",
-          "settings": {
-            "text": "Made in USA"
-          }
-        },
-        "them_item_qkYRgX": {
-          "type": "them_item",
-          "settings": {
-            "text": "Plastic Cartridge Razor"
-          }
-        },
-        "them_item_KLyLqK": {
-          "type": "them_item",
-          "settings": {
-            "text": "Expensive Refills"
-          }
-        },
-        "them_item_7rY6kD": {
-          "type": "them_item",
-          "settings": {
-            "text": "Chemical Shaving Gel"
-          }
-        },
-        "them_item_YnamnY": {
-          "type": "them_item",
-          "settings": {
-            "text": "Planned Obsolescence"
-          }
-        },
-        "them_item_MGeGQP": {
-          "type": "them_item",
-          "settings": {
-            "text": "Made Overseas"
-          }
-        }
-      },
-      "block_order": [
-        "us_item_AqUAYp",
-        "us_item_f4d3JW",
-        "us_item_7pQM9i",
-        "us_item_QnrNUx",
-        "us_item_Wkt9BX",
-        "us_item_HnU6w4",
-        "them_item_qkYRgX",
-        "them_item_KLyLqK",
-        "them_item_7rY6kD",
-        "them_item_YnamnY",
-        "them_item_MGeGQP"
-      ],
       "name": "Us vs Them",
       "settings": {
         "heading": "Us vs Them",
