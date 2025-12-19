@@ -81,6 +81,10 @@
                             </div>
                         {% endif %}
                     </div>
+                  {% when 'button' %}
+                    <div>
+                      <a href="{{ block.settings.button_url }}" class="button">{{ block.settings.button_text }}</a>
+                    </div>
                   {% when 'point' %}
                     <div class="relative pl-12 text-left" {{ block.shopify_attributes }}>
                       <img
@@ -360,6 +364,22 @@
                     "unit": "px"
                 }
             ]
+        },
+        {
+          "type": "button",
+          "name": "Button",
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button Text"
+            },
+            {
+              "type": "url",
+              "id": "button_url",
+              "label": "Button URL"
+            }
+          ]
         },
         {
           "type": "point",
