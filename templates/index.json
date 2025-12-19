@@ -232,6 +232,29 @@
     },
     "image_and_text_d4VPac": {
       "type": "image-and-text",
+      "blocks": {
+        "heading_6JBJxa": {
+          "type": "heading",
+          "settings": {
+            "content": "YOUR MORNING RITUAL MATTERS",
+            "heading_type": "h2",
+            "font_size": 40,
+            "mobile_font_size": 24
+          }
+        },
+        "text_9bahc3": {
+          "type": "text",
+          "settings": {
+            "content": "<p>A proper shave can be a grounding moment of self-care, mental fortitude, and sune mental fortitude, and starting the day with purpose and strength.</p><p>Rai-ranger shave sex trie cevett what evengins, the auvance with cival of aut, and enie frittal amnal health mental health awareness.</p>",
+            "mobile_content": "",
+            "font_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_6JBJxa",
+        "text_9bahc3"
+      ],
       "name": "Image and Text",
       "settings": {
         "background_color": "#fcfbf9",
