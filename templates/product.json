@@ -149,6 +149,37 @@
     },
     "what_included_4m9LU7": {
       "type": "what-included",
+      "blocks": {
+        "feature_cHGKPw": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/icon1.png",
+            "title": "Precision Safety Razor",
+            "description": "Engineered for a close, comfortable shave, built to last."
+          }
+        },
+        "feature_qYJ3q7": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/icon1.png",
+            "title": "Luxury Shaving Foam",
+            "description": "Rich, protective lather with natural ingredients."
+          }
+        },
+        "feature_xJQxhW": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/icon1.png",
+            "title": "10x Platinum Blades",
+            "description": "Sharp, durable double-edge blades for months of shaving."
+          }
+        }
+      },
+      "block_order": [
+        "feature_cHGKPw",
+        "feature_qYJ3q7",
+        "feature_xJQxhW"
+      ],
       "name": "What's Included",
       "settings": {
         "heading": "WHAT'S INCLUDED"
