@@ -633,6 +633,11 @@
     background-color: rgb(239 68 68 / 0.2)
 }
 
+.bg-\[\#a23225\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(162 50 37 / var(--tw-bg-opacity, 1))
+}
+
 .bg-cover {
     background-size: cover
 }
