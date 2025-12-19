@@ -262,6 +262,7 @@
         },
         "collapsible_row_XL39iJ": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Can I cancel my subscription easily?",
             "icon": "none",
