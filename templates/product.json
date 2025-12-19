@@ -328,7 +328,7 @@
           "settings": {
             "heading": "Is this suitable for beginners?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p><br/>Yes. The Ranger Core Kit is designed to be straightforward and forgiving, even if you’ve never used a safety razor before. The weight, balance, and blade exposure help guide the shave naturally, without forcing pressure. Most customers find they adapt within a few shaves.</p>",
             "page": ""
           }
         },
@@ -337,7 +337,7 @@
           "settings": {
             "heading": "How often should I change the blade?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>On average, every <strong>5–7 shaves</strong>, depending on your beard type and shaving frequency. If the shave starts to feel rough or tuggy, it’s time to swap the blade. Fresh blades are inexpensive, and changing them regularly keeps the shave comfortable and clean.</p>",
             "page": ""
           }
         },
@@ -346,7 +346,7 @@
           "settings": {
             "heading": "Can I cancel my subscription easily?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p><br/>Yes. There’s no lock-in and no runaround. You can pause, change, or cancel your blade subscription anytime from your account. No phone calls. No hoops.</p>",
             "page": ""
           }
         },
@@ -355,7 +355,7 @@
           "settings": {
             "heading": "What is the Boulder Crest Foundation?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>The Boulder Crest Foundation is a nonprofit organization that supports veterans, service members, and first responders through programs focused on mental health, personal growth, and post-service well-being. We support their work because we believe real strength includes taking care of the men who’ve carried the weight.</p>",
             "page": ""
           }
         }
