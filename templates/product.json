@@ -282,16 +282,7 @@
         "heading_xQfEGw": {
           "type": "heading",
           "settings": {
-            "content": "BUY 1 DONATE 1",
-            "heading_type": "h2",
-            "font_size": 40,
-            "mobile_font_size": 24
-          }
-        },
-        "heading_ABE9pj": {
-          "type": "heading",
-          "settings": {
-            "content": "🇺🇸",
+            "content": "BUY 1 DONATE 1 🇺🇸",
             "heading_type": "h2",
             "font_size": 40,
             "mobile_font_size": 24
@@ -308,7 +299,6 @@
       },
       "block_order": [
         "heading_xQfEGw",
-        "heading_ABE9pj",
         "text_dqRtkj"
       ],
       "name": "Image and Text",
