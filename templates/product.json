@@ -147,6 +147,13 @@
         "padding_bottom": 36
       }
     },
+    "what_included_4m9LU7": {
+      "type": "what-included",
+      "name": "What's Included",
+      "settings": {
+        "heading": "WHAT'S INCLUDED"
+      }
+    },
     "us_vs_them_Tknt7h": {
       "type": "us-vs-them",
       "blocks": {
@@ -314,6 +321,7 @@
   },
   "order": [
     "main",
+    "what_included_4m9LU7",
     "us_vs_them_Tknt7h",
     "collapsible_content_xgLkqk",
     "popular_products_NiT3Fm"
