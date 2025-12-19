@@ -1,24 +1,24 @@
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: 40px;
-    padding-bottom: 400px;
+    padding-top: 300px;
+    padding-bottom: 40px;
     background-image: url('{{ section.settings.mobile_background_image | image_url }}');
     background-color: {{ section.settings.background_color }};
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: 120px;
-      padding-bottom: 120px;
+      padding-top: 80px;
+      padding-bottom: 80px;
       background-image: url('{{ section.settings.background_image | image_url }}');
     }
   }
 {%- endstyle -%}
 
-<div id="{{ section.id }}" class="section-{{ section.id }}-padding bg-center-top bg-cover">
+<div id="{{ section.id }}" class="section-{{ section.id }}-padding bg-center bg-cover">
   <div class="page-width">
-    <div class="ml-auto max-w-[500px] md:px-10 text-center md:text-left">
-      <h1 class="text-3xl md:text-4xl font-black mt-0">{{ section.settings.title }}</h1>
+    <div class="ml-auto max-w-[600px] md:px-10 text-center md:text-left text-white md:text-black">
+      <h2 class="text-2xl md:text-4xl font-black mt-0 text-white md:text-black">{{ section.settings.title }}</h2>
       <div class="{%  if section.settings.mobile_content != "" %}[display:none] md:block{% endif %} [&>p:first-child]:mt-0 [&>p:last-child]:mb-0 [&>ul]:text-left [&>ul]:pl-6">
         {{ section.settings.content }}
       </div>

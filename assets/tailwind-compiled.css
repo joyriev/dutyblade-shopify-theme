@@ -347,6 +347,10 @@
     max-width: 896px
 }
 
+.max-w-\[600px\] {
+    max-width: 600px
+}
+
 .flex-1 {
     flex: 1 1 0%
 }
@@ -1285,6 +1289,16 @@
     .md\:text-lg {
         font-size: 18px;
         line-height: 28px
+    }
+
+    .md\:text-3xl {
+        font-size: 30px;
+        line-height: 36px
+    }
+
+    .md\:text-black {
+        --tw-text-opacity: 1;
+        color: rgb(0 0 0 / var(--tw-text-opacity, 1))
     }
 }
 
