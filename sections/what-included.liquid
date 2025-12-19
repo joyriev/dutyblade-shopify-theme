@@ -1,36 +1,35 @@
 <div class="bg-white py-14 md:py-20 border-b border-gray-100">
   <div class="page-width">
 
-    <div class="text-center mb-16">
+    <div class="text-center mb-6 md:mb-12">
       <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-0">
         {{ section.settings.heading }}
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12">
       {% for block in section.blocks %}
-        <div class="flex flex-col items-center text-center group" {{ block.shopify_attributes }}>
+        <div class="flex md:flex-col gap-4 items-center text-center group border border-solid border-gray-100 md:p-6 rounded-md shadow overflow-hidden" {{ block.shopify_attributes }}>
+          {% if block.settings.icon_image != blank %}
+            <img
+              src="{{ block.settings.icon_image | image_url }}"
+              alt="{{ block.settings.title | escape }}"
+              width="120"
+              height="120"
+              class="transition duration-300 group-hover:invert md:rounded-xl"
+              loading="lazy">
+          {% endif %}
 
-          <div class="p-4 rounded-full bg-gray-50 mb-6 group-hover:bg-primary transition-colors duration-300 flex items-center justify-center">
-            {% if block.settings.icon_image != blank %}
-              <img
-                src="{{ block.settings.icon_image | image_url: width: 96 }}"
-                alt="{{ block.settings.title | escape }}"
-                width="80"
-                height="80"
-                class="transition duration-300 group-hover:invert"
-                loading="lazy">
-            {% endif %}
+          <div class="text-left md:text-center">
+            <h3 class="font-bold text-base md:text-xl my-0 md:mb-3">
+              {{ block.settings.title }}
+            </h3>
+
+            <p class="text-gray-500 text-sm md:text-lg max-w-[250px] leading-relaxed mt-0 mb-0 line-clamp-3">
+              {{ block.settings.description }}
+            </p>
+
           </div>
-
-          <h3 class="font-bold text-xl md:text-2xl mb-3 mt-0">
-            {{ block.settings.title }}
-          </h3>
-
-          <p class="text-gray-500 text-lg max-w-[250px] leading-relaxed mt-0">
-            {{ block.settings.description }}
-          </p>
-
         </div>
       {% endfor %}
     </div>
