@@ -100,12 +100,51 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "bigger_then_a_shave_nJQJzw": {
+      "type": "bigger-then-a-shave",
+      "blocks": {
+        "feature_yMXGpx": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/icon4.png",
+            "title": "Buy 1, Donate 1",
+            "description": "For every kit sold, we donate a full grooming set to a veteran in transition."
+          }
+        },
+        "feature_qBQxUn": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/icon5.png",
+            "title": "40% to Boulder Crest",
+            "description": "We proudly support veteran post-traumatic growth and mental wellness initiatives."
+          }
+        },
+        "feature_gcBc9d": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/icon6.png",
+            "title": "Lifetime Warranty",
+            "description": "Our handles are built to survive the test of time. Guaranteed for life."
+          }
+        }
+      },
+      "block_order": [
+        "feature_yMXGpx",
+        "feature_qBQxUn",
+        "feature_gcBc9d"
+      ],
+      "name": "Bigger Than A Shave",
+      "settings": {
+        "heading": "Bigger Than A Shave"
+      }
     }
   },
   "order": [
     "home_hero_7TVE9P",
     "popular_products_3gqnEi",
     "image_and_text_TQajG3",
-    "rounded_cover_LfKNyh"
+    "rounded_cover_LfKNyh",
+    "bigger_then_a_shave_nJQJzw"
   ]
 }
