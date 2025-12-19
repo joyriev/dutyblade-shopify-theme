@@ -185,8 +185,52 @@
         "heading": "WHAT'S INCLUDED"
       }
     },
-    "us_vs_them_Tknt7h": {
+    "us_vs_them_RpHnqx": {
       "type": "us-vs-them",
+      "blocks": {
+        "comparison_row_7UXgjw": {
+          "type": "comparison_row",
+          "settings": {
+            "us_text": "Premium Safety Razor",
+            "them_text": "Plastic Cartridge Razor"
+          }
+        },
+        "comparison_row_LNyUCg": {
+          "type": "comparison_row",
+          "settings": {
+            "us_text": "High-Quality Stainless Blades",
+            "them_text": "Expensive Disposable Refills"
+          }
+        },
+        "comparison_row_cxNEkx": {
+          "type": "comparison_row",
+          "settings": {
+            "us_text": "Traditional Shaving Soap",
+            "them_text": "Chemical-Filled Gel"
+          }
+        },
+        "comparison_row_WMrefk": {
+          "type": "comparison_row",
+          "settings": {
+            "us_text": "Veteran-Owned & Operated",
+            "them_text": "Corporate Mass Production"
+          }
+        },
+        "comparison_row_Jpem38": {
+          "type": "comparison_row",
+          "settings": {
+            "us_text": "Lifetime Warranty",
+            "them_text": "Planned Obsolescence"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_7UXgjw",
+        "comparison_row_LNyUCg",
+        "comparison_row_cxNEkx",
+        "comparison_row_WMrefk",
+        "comparison_row_Jpem38"
+      ],
       "name": "Us vs Them",
       "settings": {
         "heading": "Us vs Them",
@@ -317,7 +361,7 @@
   "order": [
     "main",
     "what_included_4m9LU7",
-    "us_vs_them_Tknt7h",
+    "us_vs_them_RpHnqx",
     "image_and_text_rty6Xt",
     "collapsible_content_xgLkqk",
     "popular_products_NiT3Fm"
