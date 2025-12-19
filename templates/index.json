@@ -53,11 +53,19 @@
             "mobile_content": "",
             "font_size": 18
           }
+        },
+        "button_q4qttC": {
+          "type": "button",
+          "settings": {
+            "button_text": "GET YOUR KIT",
+            "button_url": "shopify://collections/best-sellers-1"
+          }
         }
       },
       "block_order": [
         "heading_CcxYji",
-        "text_gHnd8C"
+        "text_gHnd8C",
+        "button_q4qttC"
       ],
       "name": "Image and Text",
       "settings": {
