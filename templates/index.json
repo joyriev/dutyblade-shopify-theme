@@ -138,6 +138,97 @@
       "settings": {
         "heading": "Bigger Than A Shave"
       }
+    },
+    "us_vs_them_gnxT8p": {
+      "type": "us-vs-them",
+      "blocks": {
+        "us_item_VBFfnf": {
+          "type": "us_item",
+          "settings": {
+            "text": "Premium Safety Razor"
+          }
+        },
+        "us_item_RD9JaM": {
+          "type": "us_item",
+          "settings": {
+            "text": "High-Quality Blades"
+          }
+        },
+        "us_item_icjwg9": {
+          "type": "us_item",
+          "settings": {
+            "text": "Shaving Soap & Brush"
+          }
+        },
+        "us_item_Afgy9q": {
+          "type": "us_item",
+          "settings": {
+            "text": "Supports Veterans"
+          }
+        },
+        "us_item_CwKVhc": {
+          "type": "us_item",
+          "settings": {
+            "text": "Lifetime Warranty"
+          }
+        },
+        "us_item_yGmzPq": {
+          "type": "us_item",
+          "settings": {
+            "text": "Made in USA"
+          }
+        },
+        "them_item_WftbFE": {
+          "type": "them_item",
+          "settings": {
+            "text": "Plastic Cartridge Razor"
+          }
+        },
+        "them_item_echpth": {
+          "type": "them_item",
+          "settings": {
+            "text": "Expensive Refills"
+          }
+        },
+        "them_item_Emefqn": {
+          "type": "them_item",
+          "settings": {
+            "text": "Chemical Shaving Gel"
+          }
+        },
+        "them_item_JdTVam": {
+          "type": "them_item",
+          "settings": {
+            "text": "Planned Obsolescence"
+          }
+        },
+        "them_item_wc4pAU": {
+          "type": "them_item",
+          "settings": {
+            "text": "Made Overseas"
+          }
+        }
+      },
+      "block_order": [
+        "us_item_VBFfnf",
+        "us_item_RD9JaM",
+        "us_item_icjwg9",
+        "us_item_Afgy9q",
+        "us_item_CwKVhc",
+        "us_item_yGmzPq",
+        "them_item_WftbFE",
+        "them_item_echpth",
+        "them_item_Emefqn",
+        "them_item_JdTVam",
+        "them_item_wc4pAU"
+      ],
+      "name": "Us vs Them",
+      "settings": {
+        "heading": "Us vs Them",
+        "subheading": "The standard you walk past is the standard you accept.",
+        "cta_link": "",
+        "cta_text": "Upgrade Your Ritual Today"
+      }
     }
   },
   "order": [
@@ -145,6 +236,7 @@
     "popular_products_3gqnEi",
     "image_and_text_TQajG3",
     "rounded_cover_LfKNyh",
-    "bigger_then_a_shave_nJQJzw"
+    "bigger_then_a_shave_nJQJzw",
+    "us_vs_them_gnxT8p"
   ]
 }
