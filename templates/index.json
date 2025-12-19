@@ -299,7 +299,7 @@
           "type": "button",
           "settings": {
             "button_text": "GET YOUR FREEDOM KIT",
-            "button_url": ""
+            "button_url": "shopify://collections/best-sellers-1"
           }
         }
       },
