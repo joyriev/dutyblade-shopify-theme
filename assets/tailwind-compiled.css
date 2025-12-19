@@ -45,6 +45,10 @@
     right: 0px
 }
 
+.right-1 {
+    right: 4px
+}
+
 .isolate {
     isolation: isolate
 }
@@ -803,6 +807,11 @@
     padding-bottom: 96px
 }
 
+.py-1 {
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+
 .pl-0 {
     padding-left: 0px
 }
@@ -833,6 +842,14 @@
 
 .pb-8 {
     padding-bottom: 32px
+}
+
+.pt-8 {
+    padding-top: 32px
+}
+
+.pt-5 {
+    padding-top: 20px
 }
 
 .text-left {
