@@ -85,11 +85,26 @@
         "mobile_padding_top": 40,
         "mobile_padding_bottom": 40
       }
+    },
+    "rounded_cover_LfKNyh": {
+      "type": "rounded-cover",
+      "name": "Rounded Cover",
+      "settings": {
+        "background_color": "#fcfbf9",
+        "background_image": "shopify://shop_images/meet_ranger_core_v2.png",
+        "title": "MEET RANGER CORE - $21 for Everything You Need",
+        "subtitle": "Our RANGER CORE safety razor curtis quality shaving shaves with crafts and a ritual of shaving shaving soap, and towels.",
+        "button_text": "SEE WHAT'S INCLUDED",
+        "button_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "home_hero_7TVE9P",
     "popular_products_3gqnEi",
-    "image_and_text_TQajG3"
+    "image_and_text_TQajG3",
+    "rounded_cover_LfKNyh"
   ]
 }
