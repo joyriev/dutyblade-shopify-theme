@@ -667,6 +667,11 @@
     padding-bottom: 32px
 }
 
+.py-14 {
+    padding-top: 56px;
+    padding-bottom: 56px
+}
+
 .pl-0 {
     padding-left: 0px
 }
@@ -1063,6 +1068,11 @@
         padding-right: 40px
     }
 
+    .md\:py-20 {
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+
     .md\:text-left {
         text-align: left
     }
@@ -1080,6 +1090,11 @@
     .md\:text-5xl {
         font-size: 48px;
         line-height: 1
+    }
+
+    .md\:text-2xl {
+        font-size: 24px;
+        line-height: 32px
     }
 }
 
