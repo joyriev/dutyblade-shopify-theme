@@ -241,10 +241,27 @@
             "font_size": 40,
             "mobile_font_size": 24
           }
+        },
+        "text_G939te": {
+          "type": "text",
+          "settings": {
+            "content": "<p>We haven’t forgotten how they tried to redefine masculinity. Ranger Core was born to push back. We believe in strength, honor, and traditional values. No lectures, just a superior shave.</p>",
+            "mobile_content": "",
+            "font_size": 18
+          }
+        },
+        "button_zmJA4j": {
+          "type": "button",
+          "settings": {
+            "button_text": "GET YOUR FREEDOM KIT",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
-        "heading_LKMwpA"
+        "heading_LKMwpA",
+        "text_G939te",
+        "button_zmJA4j"
       ],
       "name": "Image and Text",
       "settings": {
