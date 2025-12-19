@@ -276,6 +276,50 @@
         "cta_text": "Upgrade Your Ritual Today"
       }
     },
+    "image_and_text_rty6Xt": {
+      "type": "image-and-text",
+      "blocks": {
+        "heading_xQfEGw": {
+          "type": "heading",
+          "settings": {
+            "content": "BUY 1 DONATE 1 🇺🇸",
+            "heading_type": "h2",
+            "font_size": 40,
+            "mobile_font_size": 24
+          }
+        },
+        "text_dqRtkj": {
+          "type": "text",
+          "settings": {
+            "content": "<p>For every Freedom Starter</p><p>Kit purchased, we donate a kit to a veteran in need through our partnership with Boulder Crest Foundation.</p><p>Your purchase makes a difference.</p>",
+            "mobile_content": "",
+            "font_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_xQfEGw",
+        "text_dqRtkj"
+      ],
+      "name": "Image and Text",
+      "settings": {
+        "background_color": "#ffffff",
+        "image": "shopify://shop_images/vet.png",
+        "rounded_image": true,
+        "image_placement": "0",
+        "mobile_image_placement": "under_heading",
+        "button_text": "",
+        "button_url": "",
+        "columns_gap": 40,
+        "rows_gap": 20,
+        "content_alignment": "center",
+        "blocks_gap": 24,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
+      }
+    },
     "collapsible_content_xgLkqk": {
       "type": "collapsible-content",
       "blocks": {
@@ -354,6 +398,7 @@
     "main",
     "what_included_4m9LU7",
     "us_vs_them_Tknt7h",
+    "image_and_text_rty6Xt",
     "collapsible_content_xgLkqk",
     "popular_products_NiT3Fm"
   ]
