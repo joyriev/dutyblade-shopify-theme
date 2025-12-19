@@ -92,7 +92,7 @@
       "name": "Rounded Cover",
       "settings": {
         "background_color": "#fcfbf9",
-        "background_image": "shopify://shop_images/meet_ranger_core_v2.png",
+        "background_image": "shopify://shop_images/meet2.png",
         "mobile_image": "shopify://shop_images/meet_ranger_core_v2-mobile.png",
         "title": "Meet RANGER CORE - $21 for Everything You Need",
         "subtitle": "A quality safety razor kit designed for comfort, control, and everyday use.",
@@ -281,7 +281,7 @@
       "name": "Image and Text",
       "settings": {
         "background_color": "#ffffff",
-        "image": "shopify://shop_images/items.png",
+        "image": "shopify://shop_images/items2.png",
         "rounded_image": true,
         "image_placement": "0",
         "mobile_image_placement": "under_heading",
