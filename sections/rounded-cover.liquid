@@ -2,28 +2,26 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: 40px;
-    padding-bottom: 400px;
-    background-image: url('{{ section.settings.mobile_background_image | image_url }}');
     background-color: {{ section.settings.background_color }};
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: 120px;
-      padding-bottom: 120px;
-      background-image: url('{{ section.settings.background_image | image_url }}');
-    }
   }
 {%- endstyle -%}
 
-<div id="{{ section.id }}" class="section-{{ section.id }}-padding bg-center-top bg-cover">
+<div id="{{ section.id }}" class="section-{{ section.id }}-padding pt-10 pb-20">
   <div class="page-width">
-    <div class="ml-auto max-w-[500px] md:px-10 text-center md:text-left">
-      <h1 class="text-3xl md:text-4xl font-black mt-0">{{ section.settings.title }}</h1>
-      {% comment %} <p class="text-lg font-medium">{{ section.settings.subtitle }}</p> {% endcomment %}
-      <p class="text-lg font-medium">Save {{ chosen_product.price | times: 25.85323165 | round | money_without_trailing_zeros }} over 10 years. No subscriptions. No cartridge</p>
-      <a href="{{ section.settings.button_link }}" class="button">Get Yours for {{ chosen_product.price | money_with_currency }}</a>
+    <div class="px-6 py-8 md:p-12 rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-8 bg-cover bg-left md:bg-center" style="background-image: url('{{ section.settings.background_image | image_url }}')">
+      <div class="space-y-6 text-center md:text-left">
+        <h2 class="text-2xl md:text-4xl font-bold my-0">{{ section.settings.title }}</h2>
+        <p class="text-lg my-0">{{ section.settings.subtitle }}</p>
+        <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_text }}</a>
+      </div>
+      <div class="md:hidden">
+        <img
+          class="h-auto w-full rounded-xl"
+          src="{{ section.settings.mobile_image | image_url }}"
+          alt="{{ section.settings.title }}"
+          height="auto"
+          width="auto">
+      </div>
     </div>
   </div>
 </div>
@@ -46,8 +44,8 @@
       },
       {
         "type": "image_picker",
-        "id": "mobile_background_image",
-        "label": "Mobile Background Image"
+        "id": "mobile_image",
+        "label": "Mobile Image"
       },
       {
         "type": "text",
