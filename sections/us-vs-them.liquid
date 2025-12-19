@@ -10,56 +10,43 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden shadow-[0_35px_60px_-15px_rgba(0,0,0,0.2)]">
-
-      <!-- US -->
-      <div class="bg-[#0F172A] text-white p-8 md:p-12">
-        <div class="text-center border-b border-white/10 pb-8 mb-8">
-          <h4 class="font-black text-2xl uppercase my-0">DutyBlade</h4>
-          <p class="text-xs uppercase tracking-[0.3em] text-gray-300 mt-2 mb-0">$21 Veteran-Owned</p>
-        </div>
-
-        <ul class="space-y-6 pl-0">
-          {% for block in section.blocks %}
-            <li class="flex items-center gap-4 font-bold">
-              <div class="bg-green-500/20 p-1 rounded-full size-8 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 6 9 17l-5-5"></path>
-                </svg>
-              </div>
-              {{ block.settings.us_text }}
-            </li>
-          {% endfor %}
-        </ul>
+    <div class="max-w-3xl mx-auto">
+      <div class="grid grid-cols-2 border-2 border-solid border-[#152031]">
+      <div class="text-center p-4 border-0 border-r-2 border-solid border-[#152031]">
+        <h4 class="font-black text-2xl uppercase my-0">DutyBlade</h4>
+        <p class="text-xs uppercase tracking-[0.3em] text-gray-600 mt-2 mb-0">$21 Veteran-Owned</p>
       </div>
-
-      <!-- THEM -->
-      <div class="bg-white text-primary p-8 md:p-12">
-        <div class="text-center border-b border-gray-100 pb-8 mb-8">
-          <h4 class="font-black text-2xl uppercase my-0">Corporate</h4>
-          <p class="text-xs uppercase tracking-[0.3em] text-gray-600 mt-2 mb-0">$35+ Mass-Market</p>
-        </div>
-
-        <ul class="space-y-6 pl-0">
-          {% for block in section.blocks %}
-            <li class="flex items-center gap-4 text-gray-500 font-medium">
-              <div class="bg-red-500/20 p-1 rounded-full size-8 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 6 6 18"></path>
-                  <path d="m6 6 12 12"></path>
-                </svg>
-              </div>
-              {{ block.settings.them_text }}
-            </li>
-          {% endfor %}
-        </ul>
+      <div class="text-center p-4">
+        <h4 class="font-black text-2xl uppercase my-0">Corporate</h4>
+        <p class="text-xs uppercase tracking-[0.3em] text-gray-600 mt-2 mb-0">$35+ Mass-Market</p>
       </div>
-
+    </div>
+    {% for block in section.blocks %}
+      <div class="grid grid-cols-2 border-2 border-solid border-[#152031] border-t-0">
+        <div class="p-4 border-0 border-r-2 border-solid border-[#152031] flex items-center gap-4">
+          <div class="bg-green-500/20 p-1 rounded-full size-8 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6 9 17l-5-5"></path>
+            </svg>
+          </div>
+          {{ block.settings.us_text }}
+        </div>
+        <div class="p-4 flex items-center gap-4">
+          <div class="bg-red-100 text-red-600 p-1 rounded-full size-8 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </div>
+          {{ block.settings.them_text }}
+        </div>
+      </div>
+    {% endfor %}
     </div>
 
     {% if section.settings.cta_link != blank %}
       <div class="mt-12 text-center">
-        <a href="{{ section.settings.cta_link }}" class="font-black uppercase tracking-widest">
+        <a href="{{ section.settings.cta_link }}" class="button">
           {{ section.settings.cta_text }}
         </a>
       </div>
