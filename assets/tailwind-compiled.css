@@ -812,6 +812,11 @@
     padding-bottom: 4px
 }
 
+.py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px
+}
+
 .pl-0 {
     padding-left: 0px
 }
