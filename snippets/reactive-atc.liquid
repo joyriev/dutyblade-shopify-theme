@@ -184,17 +184,17 @@
         buy2get2: {
           price: "{{ variant.price | times: 2 | money }}",
           compareAtPrice: "{{ variant.price | times: 4 | money }}",
-          perKit: "{{ variant.price | divided_by: 2 | money }}"
+          perKit: "{{ variant.price | times: 2 | divided_by: 4 | money }}"
         },
         buy4get4: {
           price: "{{ variant.price | times: 4 | money }}",
           compareAtPrice: "{{ variant.price | times: 8 | money }}",
-          perKit: "{{ variant.price | divided_by: 2 | money }}"
+          perKit: "{{ variant.price | times: 4 | divided_by: 8 | money }}"
         },
         buy6get6: {
           price: "{{ variant.price | times: 6 | money }}",
           compareAtPrice: "{{ variant.price | times: 12 | money }}",
-          perKit: "{{ variant.price | divided_by: 2 | money }}"
+          perKit: "{{ variant.price | times: 6 | divided_by: 12 | money }}"
         }
       },
     {% endfor %}
