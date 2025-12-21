@@ -449,6 +449,11 @@
     gap: 32px
 }
 
+.gap-x-4 {
+    -moz-column-gap: 16px;
+         column-gap: 16px
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(8px * calc(1 - var(--tw-space-y-reverse)));
@@ -855,6 +860,10 @@
 
 .pt-5 {
     padding-top: 20px
+}
+
+.pt-4 {
+    padding-top: 16px
 }
 
 .text-left {
