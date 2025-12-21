@@ -39,24 +39,19 @@
     MOST CUSTOMERS CHOOSE:
   </div>
   <div class="pt-6 relative -mt-4">
-    <div class="absolute top-0 right-1 text-white text-xs leading-snug px-2 py-1 uppercase bg-[#0F172A]">Best Seller</div>
+    <div class="absolute top-0 right-3 text-xs leading-snug px-2 py-1 uppercase" :class="$store.pdpExtra.option2 === 'arsenal' ? 'bg-sky-700 text-white' : 'bg-gray-300 text-[#0F172A]'">Best Seller</div>
     <button
       @click="$store.pdpExtra.option2 = 'arsenal'"
-      class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
-      :class="$store.pdpExtra.option2 === 'arsenal' ? 'border-[#0F172A]' : 'border-gray-300'">
-      <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
-        <span x-show="$store.pdpExtra.option2 === 'arsenal'" class="block size-4 rounded-full bg-[#0F172A]"></span>
+      class="border-2 border-solid rounded-xl cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
+      :class="$store.pdpExtra.option2 === 'arsenal' ? 'border-sky-700' : 'border-gray-300'">
+      <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-sky-700">
+        <span x-show="$store.pdpExtra.option2 === 'arsenal'" class="block size-4 rounded-full bg-sky-700"></span>
       </div>
       <div class="text-left space-y-1">
-        <h3 class="my-0 text-base font-semibold">THE ARSENAL
-          <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
-            <span x-text="$store.pdpExtra.getPerKitPrice('arsenal')"></span>
-            Per Kit
-          </span>
-        </h3>
+        <h3 class="my-0 text-base font-semibold">THE ARSENAL</h3>
         <p class="my-0 text-gray-600">
           1 Razor + 60 Blades
-          <i>(~12 mo)</i>
+          <i>(~6 mo)</i>
           + 2 Creams + Brush + Case
         </p>
       </div>
@@ -74,7 +69,7 @@
   </div>
   <button
     @click="$store.pdpExtra.option2 = 'starter'"
-    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
+    class="border-2 border-solid rounded-xl cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
     :class="$store.pdpExtra.option2 === 'starter' ? 'border-[#0F172A]' : 'border-gray-300'">
     <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
       <span x-show="$store.pdpExtra.option2 === 'starter'" class="block size-4 rounded-full bg-[#0F172A]"></span>
@@ -83,7 +78,7 @@
       <h3 class="my-0 text-base font-semibold">THE STARTER</h3>
       <p class="my-0 text-gray-600">
         1 Razor + 10 Blades
-        <i>(~2 mo)</i>
+        <i>(~1 mo)</i>
         + Cream + Brush
       </p>
     </div>
@@ -93,22 +88,16 @@
   </button>
   <button
     @click="$store.pdpExtra.option2 = 'patriot';"
-    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
+    class="border-2 border-solid rounded-xl cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
     :class="$store.pdpExtra.option2 === 'patriot' ? 'border-[#0F172A]' : 'border-gray-300'">
     <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
       <span x-show="$store.pdpExtra.option2 === 'patriot'" class="block size-4 rounded-full bg-[#0F172A]"></span>
     </div>
     <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">
-        THE PATRIOT * BEST VALUE
-        <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
-          <span x-text="$store.pdpExtra.getPerKitPrice('patriot')"></span>
-          Per Kit
-        </span>
-      </h3>
+      <h3 class="my-0 text-base font-semibold">THE PATRIOT</h3>
       <p class="my-0 text-gray-600">
         1 Razor + 30 Blades
-        <i>(~6 mo)</i>
+        <i>(~3 mo)</i>
         + Premium Cream + Brush + Case
       </p>
     </div>
@@ -121,21 +110,15 @@
   </button>
   <button
     @click="$store.pdpExtra.option2 = 'legend'"
-    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white"
+    class="border-2 border-solid rounded-xl cursor-pointer p-3 flex gap-4 items-center bg-white"
     :class="$store.pdpExtra.option2 === 'legend' ? 'border-[#0F172A]' : 'border-gray-300'">
     <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
       <span x-show="$store.pdpExtra.option2 === 'legend'" class="block size-4 rounded-full bg-[#0F172A]"></span>
     </div>
     <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">THE LEGEND - PREMIUM GIFT
-        <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
-          <span x-text="$store.pdpExtra.getPerKitPrice('legend')"></span>
-          Per Kit
-        </span>
-      </h3>
+      <h3 class="my-0 text-base font-semibold">THE LEGEND - PREMIUM GIFT</h3>
       <p class="my-0 text-gray-600">
-        <strong>Everything</strong>
-        + Gift Box + Engraving + Warranty
+        A full year of premium shaves—no refills needed.
       </p>
     </div>
     <div class="ml-auto">
