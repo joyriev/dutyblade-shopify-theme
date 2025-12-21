@@ -38,55 +38,7 @@
   <div class="pt-2">
     MOST CUSTOMERS CHOOSE:
   </div>
-  <button
-    @click="$store.pdpExtra.option2 = 'patriot';"
-    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white"
-    :class="$store.pdpExtra.option2 === 'patriot' ? 'border-[#0F172A]' : 'border-gray-300'">
-    <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
-      <span x-show="$store.pdpExtra.option2 === 'patriot'" class="block size-4 rounded-full bg-[#0F172A]"></span>
-    </div>
-    <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">
-        THE PATRIOT * BEST VALUE
-        <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
-          <span x-text="$store.pdpExtra.getPerKitPrice('patriot')"></span>
-          Per Kit
-        </span>
-      </h3>
-      <p class="my-0 text-gray-600">
-        4 razors + 16 blades
-      </p>
-    </div>
-    <div class="ml-auto">
-      <div class="font-semibold text-base" x-text="$store.pdpExtra.getPrice('patriot')"></div>
-      <div class="text-sm line-through">
-        <span x-text="$store.pdpExtra.getCompareAtPrice('patriot')"></span>
-      </div>
-    </div>
-  </button>
-
-
-  <div class="pt-2">
-    OTHER OPTIONS:
-  </div>
-  <button
-    @click="$store.pdpExtra.option2 = 'starter'"
-    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white"
-    :class="$store.pdpExtra.option2 === 'starter' ? 'border-[#0F172A]' : 'border-gray-300'">
-    <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
-      <span x-show="$store.pdpExtra.option2 === 'starter'" class="block size-4 rounded-full bg-[#0F172A]"></span>
-    </div>
-    <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">THE STARTER</h3>
-      <p class="my-0 text-gray-600">
-        1 razor + 4 blades
-      </p>
-    </div>
-    <div class="ml-auto">
-      <div class="font-semibold text-base" x-text="$store.pdpExtra.getPrice('starter')"></div>
-    </div>
-  </button>
-  <div class="pt-6 relative">
+  <div class="pt-6 relative -mt-4">
     <div class="absolute top-0 right-1 text-white text-xs leading-snug px-2 py-1 uppercase bg-[#0F172A]">Best Seller</div>
     <button
       @click="$store.pdpExtra.option2 = 'arsenal'"
@@ -103,7 +55,9 @@
           </span>
         </h3>
         <p class="my-0 text-gray-600">
-          8 razors + 32 blades
+          1 Razor + 60 Blades
+          <i>(~12 mo)</i>
+          + 2 Creams + Brush + Case
         </p>
       </div>
       <div class="ml-auto">
@@ -114,6 +68,57 @@
       </div>
     </button>
   </div>
+
+  <div class="pt-2">
+    OTHER OPTIONS:
+  </div>
+  <button
+    @click="$store.pdpExtra.option2 = 'starter'"
+    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
+    :class="$store.pdpExtra.option2 === 'starter' ? 'border-[#0F172A]' : 'border-gray-300'">
+    <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
+      <span x-show="$store.pdpExtra.option2 === 'starter'" class="block size-4 rounded-full bg-[#0F172A]"></span>
+    </div>
+    <div class="text-left space-y-1">
+      <h3 class="my-0 text-base font-semibold">THE STARTER</h3>
+      <p class="my-0 text-gray-600">
+        1 Razor + 10 Blades
+        <i>(~2 mo)</i>
+        + Cream + Brush
+      </p>
+    </div>
+    <div class="ml-auto">
+      <div class="font-semibold text-base" x-text="$store.pdpExtra.getPrice('starter')"></div>
+    </div>
+  </button>
+  <button
+    @click="$store.pdpExtra.option2 = 'patriot';"
+    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
+    :class="$store.pdpExtra.option2 === 'patriot' ? 'border-[#0F172A]' : 'border-gray-300'">
+    <div class="size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
+      <span x-show="$store.pdpExtra.option2 === 'patriot'" class="block size-4 rounded-full bg-[#0F172A]"></span>
+    </div>
+    <div class="text-left space-y-1">
+      <h3 class="my-0 text-base font-semibold">
+        THE PATRIOT * BEST VALUE
+        <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
+          <span x-text="$store.pdpExtra.getPerKitPrice('patriot')"></span>
+          Per Kit
+        </span>
+      </h3>
+      <p class="my-0 text-gray-600">
+        1 Razor + 30 Blades
+        <i>(~6 mo)</i>
+        + Premium Cream + Brush + Case
+      </p>
+    </div>
+    <div class="ml-auto">
+      <div class="font-semibold text-base" x-text="$store.pdpExtra.getPrice('patriot')"></div>
+      <div class="text-sm line-through">
+        <span x-text="$store.pdpExtra.getCompareAtPrice('patriot')"></span>
+      </div>
+    </div>
+  </button>
   <button
     @click="$store.pdpExtra.option2 = 'legend'"
     class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white"
@@ -129,7 +134,8 @@
         </span>
       </h3>
       <p class="my-0 text-gray-600">
-        12 razors + 72 blades
+        <strong>Everything</strong>
+        + Gift Box + Engraving + Warranty
       </p>
     </div>
     <div class="ml-auto">
@@ -218,7 +224,7 @@
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
       option1: "{{ selected_variant.option1 }}",
-      option2: "patriot",
+      option2: "arsenal",
       getPrice (package) { 
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
         return matchedVariant[package].price
