@@ -379,6 +379,10 @@
     flex-shrink: 0
 }
 
+.shrink-0 {
+    flex-shrink: 0
+}
+
 .scale-105 {
     --tw-scale-x: 1.05;
     --tw-scale-y: 1.05;
