@@ -14,20 +14,27 @@
     "blocky_lys_scrolling_text_bar_GLkKNr": {
       "type": "blocky-lys-scrolling-text-bar",
       "blocks": {
+        "text_QD7JEH": {
+          "type": "text",
+          "settings": {
+            "text": "BUILT FOR PATRIOTS"
+          }
+        },
         "text_DiPtyi": {
           "type": "text",
           "settings": {
-            "text": "FREE SHIPPING ABOVE $60"
+            "text": "FREE SHIPPING $60"
           }
         },
         "text_KwnK4Y": {
           "type": "text",
           "settings": {
-            "text": "24/7 SUPPORT AVAILABLE"
+            "text": "MADE BY VETS, NOT BOARDROOMS"
           }
         }
       },
       "block_order": [
+        "text_QD7JEH",
         "text_DiPtyi",
         "text_KwnK4Y"
       ],
