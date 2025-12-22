@@ -48,7 +48,12 @@
         <span x-show="$store.pdpExtra.option2 === 'arsenal'" class="block size-4 rounded-full bg-sky-700"></span>
       </div>
       <div class="text-left space-y-1">
-        <h3 class="my-0 text-base font-semibold">THE ARSENAL</h3>
+        <h3 class="my-0 text-base font-semibold">THE ARSENAL
+          <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
+            <span x-text="$store.pdpExtra.getPerShavePrice('arsenal')"></span>
+            Per Shave
+          </span>
+        </h3>
         <div class="text-3xl font-bold text-sky-700 pt-2 flex items-center gap-2">
           <span x-text="$store.pdpExtra.getPrice('arsenal')"></span>
           <span class="text-xl bg-green-700 inline-block rounded-lg px-1 py-1 leading-none text-white">50% OFF</span>
@@ -84,7 +89,12 @@
       <span x-show="$store.pdpExtra.option2 === 'starter'" class="block size-4 rounded-full bg-[#0F172A]"></span>
     </div>
     <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">THE STARTER</h3>
+      <h3 class="my-0 text-base font-semibold">THE STARTER
+        <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
+          <span x-text="$store.pdpExtra.getPerShavePrice('starter')"></span>
+          Per Shave
+        </span>
+      </h3>
       <p class="my-0 text-gray-600">
         1 Razor + 10 Blades
         <i>(1 mo)</i>
@@ -93,6 +103,9 @@
     </div>
     <div class="ml-auto shrink-0">
       <div class="font-semibold text-base" x-text="$store.pdpExtra.getPrice('starter')"></div>
+      <div class="text-sm line-through">
+        <span x-text="$store.pdpExtra.getCompareAtPrice('starter')"></span>
+      </div>
     </div>
   </button>
   <button
@@ -103,7 +116,12 @@
       <span x-show="$store.pdpExtra.option2 === 'patriot'" class="block size-4 rounded-full bg-[#0F172A]"></span>
     </div>
     <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">THE PATRIOT</h3>
+      <h3 class="my-0 text-base font-semibold">THE PATRIOT
+        <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
+          <span x-text="$store.pdpExtra.getPerShavePrice('patriot')"></span>
+          Per Shave
+        </span>
+      </h3>
       <p class="my-0 text-gray-600">
         1 Razor + 30 Blades
         <i>(3 mo)</i>
@@ -125,7 +143,12 @@
       <span x-show="$store.pdpExtra.option2 === 'legend'" class="block size-4 rounded-full bg-[#0F172A]"></span>
     </div>
     <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">THE LEGEND - PREMIUM GIFT</h3>
+      <h3 class="my-0 text-base font-semibold">THE LEGEND - PREMIUM GIFT
+        <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
+          <span x-text="$store.pdpExtra.getPerShavePrice('legend')"></span>
+          Per Shave
+        </span>
+      </h3>
       <p class="my-0 text-gray-600">
         A full year of premium shaves—no refills needed.
       </p>
@@ -191,22 +214,24 @@
         id: "{{ variant.id }}",
         name: "{{ variant.title }}",
         starter: {
-          price: "{{ variant.price | money }}"
+          price: "{{ variant.price | money }}",
+          compareAtPrice: "{{ variant.price | times: 2 | money }}",
+          perShave: "{{ variant.price | divided_by: 50 | money }}"
         },
         patriot: {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.price | times: 2 | money }}",
-          perKit: "{{ variant.price | divided_by: 4 | money }}"
+          perShave: "{{ variant.price | divided_by: 150 | money }}"
         },
         arsenal: {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.price | times: 2 | money }}",
-          perKit: "{{ variant.price | divided_by: 8 | money }}"
+          perShave: "{{ variant.price | divided_by: 300 | money }}"
         },
         legend: {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.price | times: 2 | money }}",
-          perKit: "{{ variant.price | divided_by: 12 | money }}"
+          perShave: "{{ variant.price | divided_by: 600 | money }}"
         }
       },
     {% endfor %}
@@ -225,9 +250,9 @@
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
         return matchedVariant[package].compareAtPrice
       },
-      getPerKitPrice (package) {
+      getPerShavePrice (package) {
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
-        return matchedVariant[package].perKit
+        return matchedVariant[package].perShave
       }
     });
     Alpine.effect(() => {
