@@ -1,6 +1,4 @@
-{% liquid
-  assign selected_variant = product.selected_or_first_available_variant
-%}
+{% assign selected_variant = product.selected_or_first_available_variant %}
 
 <style>
   [x-cloak] {
@@ -229,6 +227,7 @@
       {
         id: "{{ variant.id }}",
         name: "{{ variant.title }}",
+        image: "{{ variant.featured_image | image_url: width: 450 }}",
         "ranger trial": {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
@@ -253,6 +252,27 @@
     {% endfor %}
   ];
 
+  function prefetchVariantImages(variants) {
+    if (!Array.isArray(variants)) return;
+
+    const urls = new Set(
+      variants
+        .map(v => v?.image?.trim())
+        .filter(Boolean)
+    );
+
+    urls.forEach(url => {
+      const img = new Image();
+      img.decoding = 'async';
+      img.src = url;
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    prefetchVariantImages(pdVariants);
+  });
+
+
   document.addEventListener('alpine:init', () => {
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
@@ -275,6 +295,10 @@
       const store = Alpine.store('pdpExtra');
       const matchedVariant = pdVariants.find(variant => variant.name.includes(store.option1) && variant.name.toLowerCase().includes(store.option2.toLowerCase()));
       store.selectedVariant = matchedVariant.id;
+
+      const img = document.querySelector('.product_gallery_image');
+      img.setAttribute('src', matchedVariant.image);
+      img.setAttribute('srcset', `${matchedVariant.image} 1x`);
     })
   })
 </script>
