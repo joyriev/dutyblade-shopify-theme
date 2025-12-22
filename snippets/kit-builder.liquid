@@ -215,22 +215,22 @@
         name: "{{ variant.title }}",
         starter: {
           price: "{{ variant.price | money }}",
-          compareAtPrice: "{{ variant.price | times: 2 | money }}",
+          compareAtPrice: "{{ variant.compare_at_price | money }}",
           perShave: "{{ variant.price | divided_by: 50 | money }}"
         },
         patriot: {
           price: "{{ variant.price | money }}",
-          compareAtPrice: "{{ variant.price | times: 2 | money }}",
+          compareAtPrice: "{{ variant.compare_at_price | money }}",
           perShave: "{{ variant.price | divided_by: 150 | money }}"
         },
         arsenal: {
           price: "{{ variant.price | money }}",
-          compareAtPrice: "{{ variant.price | times: 2 | money }}",
+          compareAtPrice: "{{ variant.compare_at_price | money }}",
           perShave: "{{ variant.price | divided_by: 300 | money }}"
         },
         legend: {
           price: "{{ variant.price | money }}",
-          compareAtPrice: "{{ variant.price | times: 2 | money }}",
+          compareAtPrice: "{{ variant.compare_at_price | money }}",
           perShave: "{{ variant.price | divided_by: 600 | money }}"
         }
       },
