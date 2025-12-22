@@ -71,7 +71,7 @@
       "name": "Image and Text",
       "settings": {
         "background_color": "#fcfbf9",
-        "image": "shopify://shop_images/gillette_ad.png",
+        "image": "shopify://shop_images/gillette_ad_corrected.png",
         "rounded_image": true,
         "image_placement": "0",
         "mobile_image_placement": "under_heading",
