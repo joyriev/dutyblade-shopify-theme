@@ -53,6 +53,7 @@
         },
         "icon_with_text_ytpGUH": {
           "type": "icon-with-text",
+          "disabled": true,
           "settings": {
             "layout": "vertical_2",
             "desktop_icon_size": 40,
