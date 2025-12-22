@@ -54,7 +54,7 @@
             Per Shave
           </span>
         </h3>
-        <div class="text-3xl font-bold text-sky-700 pt-2 flex items-center gap-2">
+        <div class="text-3xl font-bold text-sky-700 pt-2 flex items-center gap-8">
           <span x-text="$store.pdpExtra.getPrice('arsenal')"></span>
           <span class="text-xl bg-green-700 inline-block rounded-lg px-1 py-1 leading-none text-white">50% OFF</span>
         </div>
@@ -70,9 +70,9 @@
           1,364 Veterans bought this month
         </div>
         <p class="my-0 text-gray-600">
-          1 Razor + 60 Blades
-          <i>(6 mo)</i>
-          + 2 Creams + Brush + Case
+          1 Razor + 16 Blades
+          <i>(4 mo)</i>
+          + Brush + Mixing Bowl
         </p>
       </div>
     </button>
@@ -96,9 +96,8 @@
         </span>
       </h3>
       <p class="my-0 text-gray-600">
-        1 Razor + 10 Blades
+        1 Razor + 4 Blades
         <i>(1 mo)</i>
-        + Cream + Brush
       </p>
     </div>
     <div class="ml-auto shrink-0">
@@ -123,9 +122,9 @@
         </span>
       </h3>
       <p class="my-0 text-gray-600">
-        1 Razor + 30 Blades
-        <i>(3 mo)</i>
-        + Premium Cream + Brush + Case
+        1 Razor + 8 Blades
+        <i>(2 mo)</i>
+        + Brush
       </p>
     </div>
     <div class="ml-auto shrink-0">
@@ -150,7 +149,10 @@
         </span>
       </h3>
       <p class="my-0 text-gray-600">
-        A full year of premium shaves—no refills needed.
+        1 Razor + 30 Blades
+        <i>(12 mo)</i>
+        + Brush + Mixing Bowl + Case +
+        <i>10 Free Blades</i>
       </p>
     </div>
     <div class="ml-auto shrink-0">
@@ -216,22 +218,22 @@
         starter: {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 50 | money }}"
+          perShave: "{{ variant.price | divided_by: 20 | money }}"
         },
         patriot: {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 150 | money }}"
+          perShave: "{{ variant.price | divided_by: 40 | money }}"
         },
         arsenal: {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 300 | money }}"
+          perShave: "{{ variant.price | divided_by: 80 | money }}"
         },
         legend: {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 600 | money }}"
+          perShave: "{{ variant.price | divided_by: 200 | money }}"
         }
       },
     {% endfor %}
