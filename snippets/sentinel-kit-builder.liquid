@@ -64,28 +64,28 @@
     MOST CUSTOMERS CHOOSE:
   </div>
   <div class="pt-6 relative -mt-4">
-    <div class="absolute top-0 right-3 text-xs leading-snug px-2 py-1 uppercase" :class="$store.pdpExtra.option2 === 'patriot' ? 'bg-sky-700 text-white' : 'bg-gray-300 text-[#0F172A]'">Best Seller</div>
+    <div class="absolute top-0 right-3 text-xs leading-snug px-2 py-1 uppercase" :class="$store.pdpExtra.option2 === 'operator' ? 'bg-sky-700 text-white' : 'bg-gray-300 text-[#0F172A]'">Best Seller</div>
     <button
-      @click="$store.pdpExtra.option2 = 'patriot'"
+      @click="$store.pdpExtra.option2 = 'operator'"
       class="border-2 border-solid rounded-xl cursor-pointer p-3 flex gap-4 bg-sky-50 w-full pulse"
-      :class="$store.pdpExtra.option2 === 'patriot' ? 'border-sky-700' : 'border-gray-300'">
+      :class="$store.pdpExtra.option2 === 'operator' ? 'border-sky-700' : 'border-gray-300'">
       <div class="shrink-0 size-6 flex items-center justify-center rounded-full border-2 border-solid border-sky-700">
-        <span x-show="$store.pdpExtra.option2 === 'patriot'" class="block size-4 rounded-full bg-sky-700"></span>
+        <span x-show="$store.pdpExtra.option2 === 'operator'" class="block size-4 rounded-full bg-sky-700"></span>
       </div>
       <div class="text-left space-y-1">
-        <h3 class="my-0 text-base font-semibold">THE PATRIOT
+        <h3 class="my-0 text-base font-semibold">THE OPERATOR
           <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
-            <span x-text="$store.pdpExtra.getPerShavePrice('patriot')"></span>
+            <span x-text="$store.pdpExtra.getPerShavePrice('operator')"></span>
             Per Shave
           </span>
         </h3>
         <div class="text-3xl font-bold text-sky-700 pt-2 flex items-center gap-8">
-          <span x-text="$store.pdpExtra.getPrice('patriot')"></span>
+          <span x-text="$store.pdpExtra.getPrice('operator')"></span>
           <span class="text-xl bg-green-700 inline-block rounded-lg px-1 py-1 leading-none text-white">50% OFF</span>
         </div>
         <div class="text-gray-500 font-bold text-xl mt-0 pb-2">
           Was:
-          <span class="line-through" x-text="$store.pdpExtra.getCompareAtPrice('patriot')"></span>
+          <span class="line-through" x-text="$store.pdpExtra.getCompareAtPrice('operator')"></span>
         </div>
         <div class="text-red-700 font-bold text-lg">
           ⚡︎ Only 15 left at this price
@@ -134,16 +134,16 @@
     </div>
   </button>
   <button
-    @click="$store.pdpExtra.option2 = 'operator';"
+    @click="$store.pdpExtra.option2 = 'patriot';"
     class="border-2 border-solid rounded-xl cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
-    :class="$store.pdpExtra.option2 === 'operator' ? 'border-[#0F172A]' : 'border-gray-300'">
+    :class="$store.pdpExtra.option2 === 'patriot' ? 'border-[#0F172A]' : 'border-gray-300'">
     <div class="shrink-0 size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
-      <span x-show="$store.pdpExtra.option2 === 'operator'" class="block size-4 rounded-full bg-[#0F172A]"></span>
+      <span x-show="$store.pdpExtra.option2 === 'patriot'" class="block size-4 rounded-full bg-[#0F172A]"></span>
     </div>
     <div class="text-left space-y-1">
-      <h3 class="my-0 text-base font-semibold">THE OPERATOR
+      <h3 class="my-0 text-base font-semibold">THE PATRIOT
         <span class="text-[#0F172A] text-sm bg-gray-200 font-normal inline-block px-1">
-          <span x-text="$store.pdpExtra.getPerShavePrice('operator')"></span>
+          <span x-text="$store.pdpExtra.getPerShavePrice('patriot')"></span>
           Per Shave
         </span>
       </h3>
@@ -154,9 +154,9 @@
       </p>
     </div>
     <div class="ml-auto shrink-0">
-      <div class="font-semibold text-base" x-text="$store.pdpExtra.getPrice('operator')"></div>
+      <div class="font-semibold text-base" x-text="$store.pdpExtra.getPrice('patriot')"></div>
       <div class="text-sm line-through">
-        <span x-text="$store.pdpExtra.getCompareAtPrice('operator')"></span>
+        <span x-text="$store.pdpExtra.getCompareAtPrice('patriot')"></span>
       </div>
     </div>
   </button>
@@ -219,12 +219,12 @@
           compareAtPrice: "{{ variant.compare_at_price | money }}",
           perShave: "{{ variant.price | divided_by: 40 | money }}"
         },
-        "operator": {
+        "patriot": {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
           perShave: "{{ variant.price | divided_by: 50 | money }}"
         },
-        "patriot": {
+        "operator": {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
           perShave: "{{ variant.price | divided_by: 100 | money }}"
@@ -257,7 +257,7 @@
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
       option1: "{{ selected_variant.option1 }}",
-      option2: "patriot",
+      option2: "operator",
       getPrice (package) { 
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
         return matchedVariant[package].price
