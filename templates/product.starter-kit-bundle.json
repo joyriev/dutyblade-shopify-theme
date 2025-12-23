@@ -284,6 +284,145 @@
         "mobile_padding_bottom": 40
       }
     },
+    "blocky_image_video_slider_UMnx88": {
+      "type": "blocky-image-video-slider",
+      "blocks": {
+        "image_7Az4em": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/review04_1.png",
+            "link": "",
+            "text": "",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          }
+        },
+        "image_Xe7RYA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/review05.png",
+            "link": "",
+            "text": "",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          }
+        },
+        "image_pyEXMz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/review06.png",
+            "link": "",
+            "text": "",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          }
+        },
+        "video_qYEQNd": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "autoplay": false,
+            "text": "",
+            "text_alignment": "center"
+          }
+        },
+        "video_nnQCDc": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "autoplay": false,
+            "text": "",
+            "text_alignment": "center"
+          }
+        },
+        "video_prwxGH": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "autoplay": false,
+            "text": "",
+            "text_alignment": "center"
+          }
+        },
+        "image_33gPGj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/review01.png",
+            "link": "",
+            "text": "",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          }
+        },
+        "image_4iR9VY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/review02.png",
+            "link": "",
+            "text": "",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          }
+        },
+        "image_YNXXBR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/review03.png",
+            "link": "",
+            "text": "",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_7Az4em",
+        "image_Xe7RYA",
+        "image_pyEXMz",
+        "video_qYEQNd",
+        "video_nnQCDc",
+        "video_prwxGH",
+        "image_33gPGj",
+        "image_4iR9VY",
+        "image_YNXXBR"
+      ],
+      "name": "Blocky Image/Video Slider",
+      "settings": {
+        "title": "<strong>2357 Made the Switch to DutyBlade</strong>",
+        "title_size": 40,
+        "title_color": "#000000",
+        "body_text": "",
+        "body_color": "#000000",
+        "auto_scroll": true,
+        "arrow-background-color": "#000000",
+        "arrow-carot-color": "#ffffff",
+        "dot-color": "#000000",
+        "play_button_color": "#ffffff",
+        "play_button_background_color": "#000000",
+        "media_size": "long",
+        "slides_desktop": 3,
+        "full_screen": false,
+        "desktop_content_alignment": "center",
+        "mobile_media_size": "long",
+        "slides_mobile": 2,
+        "mobile_content_alignment": "center",
+        "media_spacing": 28,
+        "arrows_position": "slider",
+        "dots_position": "under",
+        "background_color": "#fcfbf9",
+        "show_blur": false,
+        "show_shadow": true,
+        "page_width": 1200,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collapsible_content_xgLkqk": {
       "type": "collapsible-content",
       "blocks": {
@@ -384,6 +523,7 @@
     "what_included_4m9LU7",
     "us_vs_them_RpHnqx",
     "image_and_text_rty6Xt",
+    "blocky_image_video_slider_UMnx88",
     "collapsible_content_xgLkqk",
     "popular_products_NiT3Fm",
     "1766383674ba840743"
