@@ -368,11 +368,10 @@
         "image_9AmwAf",
         "image_TLNkkn"
       ],
-      "disabled": true,
       "name": "Blocky Image/Video Slider",
       "settings": {
         "title": "<strong>2357 Made the Switch to DutyBlade</strong>",
-        "title_size": 60,
+        "title_size": 40,
         "title_color": "#000000",
         "body_text": "",
         "body_color": "#000000",
@@ -390,7 +389,7 @@
         "slides_mobile": 2,
         "mobile_content_alignment": "center",
         "media_spacing": 28,
-        "arrows_position": "hidden",
+        "arrows_position": "slider",
         "dots_position": "under",
         "background_color": "#ffffff",
         "show_blur": false,
