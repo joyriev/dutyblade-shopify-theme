@@ -30,7 +30,7 @@
       "settings": {
         "background_color": "#ffffff",
         "title": "Popular Products",
-        "collection": "best-sellers-1",
+        "collection": "home-page",
         "padding_top": 72,
         "padding_bottom": 72
       }
