@@ -162,9 +162,9 @@
       </h3>
       <p class="my-0 text-gray-600">
         1 Razor + 30 Blades
-        <i>(12 mo)</i>
+        <i>(6 mo)</i>
         + Brush + Mixing Bowl + Case +
-        <i>10 Free Blades</i>
+        <i class="font-bold">10 Free Blades</i>
       </p>
     </div>
     <div class="ml-auto shrink-0">
@@ -227,7 +227,7 @@
       {
         id: "{{ variant.id }}",
         name: "{{ variant.title }}",
-        image: "{{ variant.featured_image | image_url: width: 450 }}",
+        image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 450 }}{% endif %}",
         "ranger trial": {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
@@ -272,7 +272,6 @@
     prefetchVariantImages(pdVariants);
   });
 
-
   document.addEventListener('alpine:init', () => {
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
@@ -296,9 +295,11 @@
       const matchedVariant = pdVariants.find(variant => variant.name.includes(store.option1) && variant.name.toLowerCase().includes(store.option2.toLowerCase()));
       store.selectedVariant = matchedVariant.id;
 
-      const img = document.querySelector('.product_gallery_image');
-      img.setAttribute('src', matchedVariant.image);
-      img.setAttribute('srcset', `${matchedVariant.image} 1x`);
+      if (matchedVariant.image) {
+        const img = document.querySelector('.product_gallery_image');
+        img.setAttribute('src', matchedVariant.image);
+        img.setAttribute('srcset', `${matchedVariant.image} 1x`);
+      }
     })
   })
 </script>
