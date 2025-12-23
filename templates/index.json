@@ -391,7 +391,7 @@
         "media_spacing": 28,
         "arrows_position": "slider",
         "dots_position": "under",
-        "background_color": "#ffffff",
+        "background_color": "#fcfbf9",
         "show_blur": false,
         "show_shadow": true,
         "page_width": 1200,
