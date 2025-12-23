@@ -217,22 +217,17 @@
         "starter": {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 20 | money }}"
+          perShave: "{{ variant.price | divided_by: 40 | money }}"
         },
         "operator": {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 40 | money }}"
+          perShave: "{{ variant.price | divided_by: 50 | money }}"
         },
         "patriot": {
           price: "{{ variant.price | money }}",
           compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 80 | money }}"
-        },
-        "commando": {
-          price: "{{ variant.price | money }}",
-          compareAtPrice: "{{ variant.compare_at_price | money }}",
-          perShave: "{{ variant.price | divided_by: 200 | money }}"
+          perShave: "{{ variant.price | divided_by: 100 | money }}"
         }
       },
     {% endfor %}
