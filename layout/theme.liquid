@@ -331,6 +331,7 @@ body {
     {%- endif -%}
 
     {{ 'tailwind-compiled.css' | asset_url | stylesheet_tag }}
+    {{ 'blocky.css' | asset_url | stylesheet_tag }}
 
     <script>
       if (Shopify.designMode) {
