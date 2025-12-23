@@ -22,7 +22,6 @@
         },
         "custom_liquid_aQPUWM": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'kit-builder' %}"
           }
@@ -378,16 +377,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "custom_liquid_YijGgi": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -397,7 +386,6 @@
     "image_and_text_rty6Xt",
     "collapsible_content_xgLkqk",
     "popular_products_NiT3Fm",
-    "1766383674ba840743",
-    "custom_liquid_YijGgi"
+    "1766383674ba840743"
   ]
 }
