@@ -232,7 +232,18 @@
         percentOff: "{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round }}",
         price: "{{ variant.price | money }}",
         compareAtPrice: "{{ variant.compare_at_price | money }}",
-        perShave: "{{ variant.price | divided_by: 20 | money }}"
+        "ranger trial": {
+          perShave: "{{ variant.price | divided_by: 20 | money }}"
+        },
+        "ranger core": {
+          perShave: "{{ variant.price | divided_by: 40 | money }}"
+        },
+        "valkyrie": {
+          perShave: "{{ variant.price | divided_by: 80 | money }}"
+        },
+        "commando": {
+          perShave: "{{ variant.price | divided_by: 200 | money }}"
+        }
       },
     {% endfor %}
   ];
@@ -272,7 +283,7 @@
       },
       getPerShavePrice (package) {
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
-        return matchedVariant.perShave
+        return matchedVariant[package].perShave
       },
       getPercentOff (package) {
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
