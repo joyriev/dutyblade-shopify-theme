@@ -217,8 +217,16 @@
         image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 450 }}{% endif %}",
         price: "{{ variant.price | money }}",
         compareAtPrice: "{{ variant.compare_at_price | money }}",
-        perShave: "{{ variant.price | divided_by: 40 | money }}",
-        percentOff: "{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round }}"
+        percentOff: "{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round }}",
+        "starter": {
+          perShave: "{{ variant.price | divided_by: 40 | money }}"
+        },
+        "patriot": {
+          perShave: "{{ variant.price | divided_by: 50 | money }}"
+        },
+        "operator": {
+          perShave: "{{ variant.price | divided_by: 100 | money }}"
+        }
       },
     {% endfor %}
   ];
@@ -258,7 +266,7 @@
       },
       getPerShavePrice (package) {
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
-        return matchedVariant.perShave;
+        return matchedVariant[package].perShave;
       },
       getPercentOff (package) {
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
