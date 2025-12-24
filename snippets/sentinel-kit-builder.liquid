@@ -32,13 +32,13 @@
 {% endif %}
 
 {% if product.variants.size > 1 %}
-  <div x-data class="hidden">
+  <div x-data>
     <div>Color:
       <span x-text="$store.pdpExtra.option1"></span>
     </div>
     <div class="flex gap-2 flex-wrap pt-2">
       {% for value in product.options_with_values[0].values %}
-        {% assign bg_color = "#fff" %}
+        {% assign bg_color = "#eed58b" %}
         {% if value == "Black" %}
           {% assign bg_color = "#0F172A" %}
         {% endif %}
