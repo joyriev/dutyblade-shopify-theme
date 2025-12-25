@@ -214,7 +214,7 @@
       {
         id: "{{ variant.id }}",
         name: "{{ variant.title }}",
-        image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 450 }}{% endif %}",
+        image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 750 }}{% endif %}",
         price: "{{ variant.price | money }}",
         compareAtPrice: "{{ variant.compare_at_price | money }}",
         percentOff: "{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round }}",
