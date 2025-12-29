@@ -83,8 +83,7 @@
       type="hidden"
       name="id"
       id="product-variant-id"
-      {% comment %} :value="$store.pdpExtra.selectedVariant" {% endcomment %}
-       value="52535651828079"
+      :value="$store.pdpExtra.selectedVariant"
       class="product-variant-id">
     <input
       type="hidden"
@@ -100,8 +99,6 @@
     </button>
   {%- endform -%}
 </product-form>
-
-<p x-data x-text="$store.pdpExtra.selectedVariant"></p>
 
 <ul class="list-none p-0 flex justify-center flex-wrap gap-x-4">
   <li>
