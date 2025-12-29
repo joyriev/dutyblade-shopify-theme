@@ -138,25 +138,25 @@
       option1: "{{ selected_variant.option1 }}",
       option2: "commando",
       getPrice (package) { 
-        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
+        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
         return matchedVariant.price
       },
       getCompareAtPrice (package) {
-        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
+        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
         return matchedVariant.compareAtPrice
       },
       getPerShavePrice (package) {
-        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
+        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
         return matchedVariant[package].perShave
       },
       getPercentOff (package) {
-        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
+        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
         return matchedVariant.percentOff
       }
     });
     Alpine.effect(() => {
       const store = Alpine.store('pdpExtra');
-      const matchedVariant = pdVariants.find(variant => variant.name.includes(store.option1) && variant.name.toLowerCase().includes(store.option2.toLowerCase()));
+      const matchedVariant = pdVariants.find(variant => variant.name.includes(store.option1));
       store.selectedVariant = matchedVariant.id;
 
       if (matchedVariant.image) {
