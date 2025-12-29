@@ -107,21 +107,7 @@
         id: "{{ variant.id }}",
         name: "{{ variant.title }}",
         image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 750 }}{% endif %}",
-        percentOff: "{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round }}",
-        price: "{{ variant.price | money }}",
-        compareAtPrice: "{{ variant.compare_at_price | money }}",
-        "ranger trial": {
-          perShave: "{{ variant.price | divided_by: 20 | money }}"
-        },
-        "ranger core": {
-          perShave: "{{ variant.price | divided_by: 40 | money }}"
-        },
-        "valkyrie": {
-          perShave: "{{ variant.price | divided_by: 80 | money }}"
-        },
-        "commando": {
-          perShave: "{{ variant.price | divided_by: 200 | money }}"
-        }
+        price: "{{ variant.price | money }}"
       },
     {% endfor %}
   ];
