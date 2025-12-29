@@ -20,20 +20,6 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
-        "variant_picker_hx3GET": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "buy_buttons_PcQdTJ": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
         "custom_liquid_aQPUWM": {
           "type": "custom_liquid",
           "settings": {
@@ -138,8 +124,6 @@
       "block_order": [
         "title_DkyBTh",
         "judge_me_reviews_preview_badge_TFx9tw",
-        "variant_picker_hx3GET",
-        "buy_buttons_PcQdTJ",
         "custom_liquid_aQPUWM",
         "payment_badges_FkCwVc",
         "delivery_deadline_CQHJwz",
