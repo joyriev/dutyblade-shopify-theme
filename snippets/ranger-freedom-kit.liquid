@@ -46,6 +46,15 @@
   </div>
 {% endif %}
 
+<div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+  {%- render 'price',
+    product: product,
+    use_variant: true,
+    show_badges: true,
+    price_class: 'price--large'
+  -%}
+</div>
+
 <product-form
   class="product-form"
   data-hide-errors="{{ gift_card_recipient_feature_active }}"
