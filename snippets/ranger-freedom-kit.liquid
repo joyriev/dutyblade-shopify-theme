@@ -52,7 +52,7 @@
       <div class="price__sale price__price-first" x-data>
          <span class="visually-hidden visually-hidden--inline">Regular price</span>
          <span>
-         <s class="price-item price-item--regular">
+         <s class="price-item price-item--regular" x-text="$store.pdpExtra.get">
             Tk 3,300.00
          </s>
          </span>
@@ -148,11 +148,11 @@
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
       option1: "{{ selected_variant.option1 }}",
-      getPrice (package) { 
+      get getPrice () { 
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
         return matchedVariant.price
       },
-      getCompareAtPrice (package) {
+      get getCompareAtPrice () {
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
         return matchedVariant.compareAtPrice
       }
