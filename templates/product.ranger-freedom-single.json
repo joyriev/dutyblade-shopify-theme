@@ -22,6 +22,7 @@
         },
         "custom_liquid_aQPUWM": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'kit-builder' %}"
           }
