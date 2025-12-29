@@ -119,7 +119,8 @@
         id: "{{ variant.id }}",
         name: "{{ variant.title }}",
         image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 750 }}{% endif %}",
-        price: "{{ variant.price | money }}"
+        price: "{{ variant.price | money }}",
+        compareAtPrice: "{{ variant.compare_at_price | money }}"
       },
     {% endfor %}
   ];
