@@ -154,58 +154,15 @@
         "padding_bottom": 36
       }
     },
-    "us_vs_them_t3V464": {
-      "type": "us-vs-them",
-      "blocks": {
-        "comparison_row_wzm73n": {
-          "type": "comparison_row",
-          "settings": {
-            "us_text": "Premium Safety Razor",
-            "them_text": "Plastic Cartridge Razor"
-          }
-        },
-        "comparison_row_XegXBE": {
-          "type": "comparison_row",
-          "settings": {
-            "us_text": "High-Quality Stainless Blades",
-            "them_text": "Expensive Disposable Refills"
-          }
-        },
-        "comparison_row_rhw7p3": {
-          "type": "comparison_row",
-          "settings": {
-            "us_text": "Traditional Shaving Soap",
-            "them_text": "Chemical-Filled Gel"
-          }
-        },
-        "comparison_row_whLFqN": {
-          "type": "comparison_row",
-          "settings": {
-            "us_text": "Veteran-Owned & Operated",
-            "them_text": "Corporate Mass Production"
-          }
-        },
-        "comparison_row_YmyKei": {
-          "type": "comparison_row",
-          "settings": {
-            "us_text": "Lifetime Warranty",
-            "them_text": "Planned Obsolescence"
-          }
-        }
-      },
-      "block_order": [
-        "comparison_row_wzm73n",
-        "comparison_row_XegXBE",
-        "comparison_row_rhw7p3",
-        "comparison_row_whLFqN",
-        "comparison_row_YmyKei"
-      ],
-      "name": "Us vs Them",
+    "comparison_section_gw8bib": {
+      "type": "comparison-section",
+      "name": "Comparison Section",
       "settings": {
-        "heading": "Us vs Them",
-        "subheading": "The standard you walk past is the standard you accept.",
-        "cta_link": "",
-        "cta_text": "Upgrade Your Ritual Today"
+        "background_color": "#fcfbf9",
+        "image": "shopify://shop_images/dutyblade_us_vs_them_1.png",
+        "title": "How We Compare",
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "image_and_text_mcrAUd": {
@@ -407,7 +364,7 @@
     "rounded_cover_LfKNyh",
     "bigger_then_a_shave_nJQJzw",
     "more_than_a_shave_YrHad6",
-    "us_vs_them_t3V464",
+    "comparison_section_gw8bib",
     "image_and_text_mcrAUd",
     "blocky_image_video_slider_3iC3ny"
   ]
