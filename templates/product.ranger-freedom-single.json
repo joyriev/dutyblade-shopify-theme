@@ -154,7 +154,7 @@
         "feature_cHGKPw": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icon1.png",
+            "icon_image": "shopify://shop_images/icons_razor.png",
             "title": "Precision Safety Razor",
             "description": "Engineered for a close, comfortable shave, built to last."
           }
@@ -162,7 +162,7 @@
         "feature_qYJ3q7": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_quality.png",
+            "icon_image": "shopify://shop_images/icons_support.png",
             "title": "Satisfaction Guarantee",
             "description": "If it’s not a better shave, we’ll make it right."
           }
@@ -170,7 +170,7 @@
         "feature_xJQxhW": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icon3.png",
+            "icon_image": "shopify://shop_images/icons_blades.png",
             "title": "10x Platinum Blades",
             "description": "Sharp, durable double-edge blades for months of shaving."
           }
