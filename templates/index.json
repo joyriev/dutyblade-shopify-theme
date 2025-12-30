@@ -108,7 +108,7 @@
         "feature_yMXGpx": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_donate.png",
+            "icon_image": "shopify://shop_images/icons_donate_2.png",
             "title": "Buy 1, Donate 1",
             "description": "For every kit sold, we donate a full grooming set to a veteran in transition."
           }
@@ -116,7 +116,7 @@
         "feature_qBQxUn": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_boulder.png",
+            "icon_image": "shopify://shop_images/icons_donate_2_d53d90d4-a428-42d9-a41b-08af648eb812.png",
             "title": "40% to Boulder Crest",
             "description": "We proudly support veteran post-traumatic growth and mental wellness initiatives."
           }
@@ -124,7 +124,7 @@
         "feature_gcBc9d": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_vet.png",
+            "icon_image": "shopify://shop_images/icons_vet_2.png",
             "title": "Lifetime Warranty",
             "description": "Our handles are built to survive the test of time. Guaranteed for life."
           }
