@@ -218,13 +218,13 @@
         price: "{{ variant.price | money }}",
         compareAtPrice: "{{ variant.compare_at_price | money }}",
         percentOff: "{{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round }}",
-        "starter": {
+        "recruit": {
           perShave: "{{ variant.price | divided_by: 40 | money }}"
         },
-        "patriot": {
+        "officer": {
           perShave: "{{ variant.price | divided_by: 50 | money }}"
         },
-        "operator": {
+        "commander": {
           perShave: "{{ variant.price | divided_by: 100 | money }}"
         }
       },
