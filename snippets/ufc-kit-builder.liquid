@@ -255,7 +255,7 @@
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
       option1: "{{ selected_variant.option1 }}",
-      option2: "commander",
+      option2: "gladiator",
       getPrice (package) { 
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
         return matchedVariant.price;
