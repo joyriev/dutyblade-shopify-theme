@@ -521,18 +521,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "1767159623f50a38f6": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "1767159652dbd6f8b3": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -545,8 +533,6 @@
     "popular_products_NiT3Fm",
     "1766383674ba840743",
     "1767159565d49c58f1",
-    "17671596054513f7e2",
-    "1767159623f50a38f6",
-    "1767159652dbd6f8b3"
+    "17671596054513f7e2"
   ]
 }
