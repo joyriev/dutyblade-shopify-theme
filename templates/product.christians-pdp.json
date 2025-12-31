@@ -155,24 +155,24 @@
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/icons_razor.png",
-            "title": "Precision Safety Razor",
-            "description": "Engineered for a close, comfortable shave, built to last."
+            "title": "Stewardship",
+            "description": "We treat creation, craft, and resources as responsibilities — not possessions."
           }
         },
         "feature_qYJ3q7": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/icons_support.png",
-            "title": "Satisfaction Guarantee",
-            "description": "If it’s not a better shave, we’ll make it right."
+            "title": "Faith",
+            "description": "Every decision is guided by faith-grounded conviction — not trends."
           }
         },
         "feature_xJQxhW": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/icons_blades.png",
-            "title": "10x Platinum Blades",
-            "description": "Sharp, durable double-edge blades for months of shaving."
+            "title": "Intergity",
+            "description": "We keep our word because character matters more than profit."
           }
         }
       },
@@ -183,7 +183,7 @@
       ],
       "name": "What's Included",
       "settings": {
-        "heading": "WHAT'S INCLUDED"
+        "heading": "Our Values"
       }
     },
     "comparison_section_9QbEnN": {
