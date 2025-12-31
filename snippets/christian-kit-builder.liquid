@@ -49,7 +49,7 @@
           style="background-color: {{ bg_color }}"
           @click="$store.pdpExtra.option1 = '{{ value }}';"
           class="p-0 border-2 border-solid rounded-full size-12 flex items-center justify-center cursor-pointer"
-          :class="$store.pdpExtra.option1 === '{{ value }}' ? 'border-sky-700' : 'border-gray-200'">
+          :class="$store.pdpExtra.option1 === '{{ value }}' ? 'border-red-600' : 'border-gray-200'">
           <span class="sr-only">
             {{ value }}
           </span>
@@ -255,7 +255,7 @@
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
       option1: "{{ selected_variant.option1 }}",
-      option2: "commander",
+      option2: "valor",
       getPrice (package) { 
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1) && variant.name.toLowerCase().includes(package.toLowerCase()));
         return matchedVariant.price;
