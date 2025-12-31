@@ -524,6 +524,11 @@
     border-color: rgb(15 23 42 / var(--tw-border-opacity, 1))
 }
 
+.border-red-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(220 38 38 / var(--tw-border-opacity, 1))
+}
+
 .bg-\[\#0F172A\] {
     --tw-bg-opacity: 1;
     background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1))
