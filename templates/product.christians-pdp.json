@@ -156,7 +156,7 @@
           "settings": {
             "icon_image": "shopify://shop_images/icons_razor.png",
             "title": "Stewardship",
-            "description": "We treat creation, craft, and resources as responsibilities — not possessions."
+            "description": "We treat our craft and your hard-earned resources as a responsibility to God—not an opportunity for greed."
           }
         },
         "feature_qYJ3q7": {
@@ -164,7 +164,7 @@
           "settings": {
             "icon_image": "shopify://shop_images/icons_support.png",
             "title": "Faith",
-            "description": "Every decision is guided by faith-grounded conviction — not trends."
+            "description": "Every decision is guided by Biblical conviction and timeless truth—not modern social trends or corporate pressure."
           }
         },
         "feature_xJQxhW": {
@@ -172,7 +172,7 @@
           "settings": {
             "icon_image": "shopify://shop_images/icons_blades.png",
             "title": "Intergity",
-            "description": "We keep our word because character matters more than profit."
+            "description": "We keep our word and stand for the truth, because a man’s character is his greatest asset."
           }
         }
       },
@@ -506,7 +506,7 @@
             "corner_styling": "soft",
             "header_text_color": "#000000",
             "text_color": "#000000",
-            "card_color": "#F9F9F9",
+            "card_color": "#f9f9f9",
             "stars_color": "",
             "arrows_color": "#000000",
             "transition_speed": 5,
