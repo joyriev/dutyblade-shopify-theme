@@ -473,6 +473,66 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "1767159565d49c58f1": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17671596054513f7e2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_mgGyU8": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#F9F9F9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_mgGyU8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1767159623f50a38f6": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1767159652dbd6f8b3": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -483,6 +543,10 @@
     "blocky_image_video_slider_UMnx88",
     "collapsible_content_xgLkqk",
     "popular_products_NiT3Fm",
-    "1766383674ba840743"
+    "1766383674ba840743",
+    "1767159565d49c58f1",
+    "17671596054513f7e2",
+    "1767159623f50a38f6",
+    "1767159652dbd6f8b3"
   ]
 }
