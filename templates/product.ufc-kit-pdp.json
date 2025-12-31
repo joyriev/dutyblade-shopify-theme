@@ -155,24 +155,24 @@
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/icons_razor.png",
-            "title": "Precision Safety Razor",
-            "description": "Engineered for a close, comfortable shave, built to last."
+            "title": "Discipline",
+            "description": "Train daily. Shave weekly. No excuses."
           }
         },
         "feature_qYJ3q7": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/icons_support.png",
-            "title": "Satisfaction Guarantee",
-            "description": "If it’s not a better shave, we’ll make it right."
+            "title": "Grit",
+            "description": "Built for men who show up when it hurts."
           }
         },
         "feature_xJQxhW": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/icons_blades.png",
-            "title": "10x Platinum Blades",
-            "description": "Sharp, durable double-edge blades for months of shaving."
+            "title": "Honor",
+            "description": "We respect those who step into the arena. Our word is our bond."
           }
         }
       },
