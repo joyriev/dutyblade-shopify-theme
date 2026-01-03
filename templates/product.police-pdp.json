@@ -154,7 +154,7 @@
         "feature_cHGKPw": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_razor.png",
+            "icon_image": "shopify://shop_images/icons_honor.png",
             "title": "Duty",
             "description": "Built for those who hold the line. Tools that don't fail when it counts."
           }
@@ -162,7 +162,7 @@
         "feature_qYJ3q7": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_support.png",
+            "icon_image": "shopify://shop_images/icons_courage.png",
             "title": "Conviction",
             "description": "We serve those who serve—not corporate trends or political agendas."
           }
@@ -170,7 +170,7 @@
         "feature_xJQxhW": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_blades.png",
+            "icon_image": "shopify://shop_images/icons_brotherhood.png",
             "title": "Integrity",
             "description": "We keep our word and deliver on quality. A man's character is his bond."
           }
