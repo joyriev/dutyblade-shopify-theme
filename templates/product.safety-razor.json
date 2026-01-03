@@ -241,6 +241,138 @@
         "mobile_padding_bottom": 40
       }
     },
+    "image_and_text_r9FMHq": {
+      "type": "image-and-text",
+      "blocks": {
+        "heading_PtDHBJ": {
+          "type": "heading",
+          "settings": {
+            "content": "Built to Outlast",
+            "heading_type": "h2",
+            "font_size": 40,
+            "mobile_font_size": 24
+          }
+        },
+        "text_dBF8MG": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Metal in your hand. Weight. Balance. Something that doesn't flex, doesn't creak, doesn't feel disposable.</p><p>Our competitor's cartridge systems are designed to keep you buying. That is the business model. We built the opposite. A razor that can live on your counter for years, and all you swap is the blade. That is it.</p><p>If you've ever picked up a cheap handle and thought it feels like a toy, we get it. We refuse to ship anything that doesn't feel solid, simple, and ready for daily use.</p>",
+            "mobile_content": "",
+            "font_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_PtDHBJ",
+        "text_dBF8MG"
+      ],
+      "name": "Image and Text",
+      "settings": {
+        "background_color": "#fcfbf9",
+        "image": "shopify://shop_images/safety_razor_02_1.png",
+        "rounded_image": true,
+        "image_placement": "1",
+        "mobile_image_placement": "under_heading",
+        "button_text": "",
+        "button_url": "",
+        "columns_gap": 40,
+        "rows_gap": 20,
+        "content_alignment": "center",
+        "blocks_gap": 24,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
+      }
+    },
+    "image_and_text_48UzGC": {
+      "type": "image-and-text",
+      "blocks": {
+        "heading_fULWyN": {
+          "type": "heading",
+          "settings": {
+            "content": "Engineered to Rinse Clean, Fast",
+            "heading_type": "h2",
+            "font_size": 40,
+            "mobile_font_size": 24
+          }
+        },
+        "text_takywk": {
+          "type": "text",
+          "settings": {
+            "content": "<p>This is one of those things you don't notice until you've dealt with the opposite for years. Clogged razors ruin the whole shave. You start pushing harder, you do extra passes, and your skin takes the hit.</p><p>We spent a significant amount of time making sure our razor rinses out quickly and stays consistent. When it clears fast, you shave with the same smooth feel from start to finish. It sounds small, but it changes the entire routine. Less stopping. Less scraping. Less frustration.</p>",
+            "mobile_content": "",
+            "font_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_fULWyN",
+        "text_takywk"
+      ],
+      "name": "Image and Text",
+      "settings": {
+        "background_color": "#ffffff",
+        "image": "shopify://shop_images/safety_razor_03_1.png",
+        "rounded_image": true,
+        "image_placement": "0",
+        "mobile_image_placement": "under_heading",
+        "button_text": "",
+        "button_url": "",
+        "columns_gap": 40,
+        "rows_gap": 20,
+        "content_alignment": "center",
+        "blocks_gap": 24,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
+      }
+    },
+    "image_and_text_LpDPUF": {
+      "type": "image-and-text",
+      "blocks": {
+        "heading_GAKEEe": {
+          "type": "heading",
+          "settings": {
+            "content": "Less Irritation, More Confidence",
+            "heading_type": "h2",
+            "font_size": 40,
+            "mobile_font_size": 24
+          }
+        },
+        "text_AVzykj": {
+          "type": "text",
+          "settings": {
+            "content": "<p>We’re putting this razor out into the world because we believe shaving should not feel like a punishment. If you deal with bumps, burn, or that tight, angry skin after, you are not broken. A lot of modern razors cause that by design: multiple blades, more friction, more passes, more irritation. This razor is our answer to that.</p><p>And yeah, we are proud of where this comes from. Veteran-owned. Built with a mission. We are not chasing trends, we are building something we would hand to our own guys and say, “Here. This works.”</p>",
+            "mobile_content": "",
+            "font_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_GAKEEe",
+        "text_AVzykj"
+      ],
+      "name": "Image and Text",
+      "settings": {
+        "background_color": "#fcfbf9",
+        "image": "shopify://shop_images/single_razor_04_gif.gif",
+        "rounded_image": true,
+        "image_placement": "1",
+        "mobile_image_placement": "under_heading",
+        "button_text": "",
+        "button_url": "",
+        "columns_gap": 40,
+        "rows_gap": 20,
+        "content_alignment": "center",
+        "blocks_gap": 24,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
+      }
+    },
     "image_and_text_rty6Xt": {
       "type": "image-and-text",
       "blocks": {
@@ -524,6 +656,9 @@
     "what_included_4m9LU7",
     "comparison_section_9QbEnN",
     "image_and_text_zmCG4E",
+    "image_and_text_r9FMHq",
+    "image_and_text_48UzGC",
+    "image_and_text_LpDPUF",
     "image_and_text_rty6Xt",
     "blocky_image_video_slider_UMnx88",
     "collapsible_content_xgLkqk",
