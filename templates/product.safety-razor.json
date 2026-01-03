@@ -197,6 +197,50 @@
         "padding_bottom": 72
       }
     },
+    "image_and_text_zmCG4E": {
+      "type": "image-and-text",
+      "blocks": {
+        "heading_BNXtBy": {
+          "type": "heading",
+          "settings": {
+            "content": "A Smooth Shave, Minus the Nicks",
+            "heading_type": "h2",
+            "font_size": 40,
+            "mobile_font_size": 24
+          }
+        },
+        "text_hr6dhE": {
+          "type": "text",
+          "settings": {
+            "content": "<p>We built this razor because we were sick of the same tradeoff: either you get a close shave and your skin pays for it, or you back off and still feel stubble by lunch. We spent a long time obsessing over one thing, control. Not marketing control, real control in your hand at 7 a.m. when you're half awake and trying not to shred your skin.</p><p>A single blade, used the right way, is cleaner and more predictable than a stack of blades dragging over the same spot.</p><p>We are not going to pretend you will never nick yourself. It is a real blade. But with the right angle and no pressure, most guys notice the difference fast: less burn, fewer bumps, and a finish that actually looks sharp.</p>",
+            "mobile_content": "",
+            "font_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_BNXtBy",
+        "text_hr6dhE"
+      ],
+      "name": "Image and Text",
+      "settings": {
+        "background_color": "#ffffff",
+        "image": "shopify://shop_images/safety_razor_01.png",
+        "rounded_image": true,
+        "image_placement": "0",
+        "mobile_image_placement": "under_heading",
+        "button_text": "",
+        "button_url": "",
+        "columns_gap": 40,
+        "rows_gap": 20,
+        "content_alignment": "center",
+        "blocks_gap": 24,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
+      }
+    },
     "image_and_text_rty6Xt": {
       "type": "image-and-text",
       "blocks": {
@@ -479,6 +523,7 @@
     "main",
     "what_included_4m9LU7",
     "comparison_section_9QbEnN",
+    "image_and_text_zmCG4E",
     "image_and_text_rty6Xt",
     "blocky_image_video_slider_UMnx88",
     "collapsible_content_xgLkqk",
