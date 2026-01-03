@@ -154,7 +154,7 @@
         "feature_cHGKPw": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_razor.png",
+            "icon_image": "shopify://shop_images/icons_stewardship.png",
             "title": "Stewardship",
             "description": "We treat our craft and your hard-earned resources as a responsibility to God."
           }
@@ -162,7 +162,7 @@
         "feature_qYJ3q7": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_support.png",
+            "icon_image": "shopify://shop_images/icons_faith.png",
             "title": "Faith",
             "description": "Every decision is guided by Biblical conviction and timeless truth—not modern social trends."
           }
@@ -170,7 +170,7 @@
         "feature_xJQxhW": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_blades.png",
+            "icon_image": "shopify://shop_images/icons_integrity.png",
             "title": "Integrity",
             "description": "We keep our word and stand for the truth, because a man’s character is his greatest asset."
           }
