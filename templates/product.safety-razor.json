@@ -188,6 +188,7 @@
     },
     "comparison_section_9QbEnN": {
       "type": "comparison-section",
+      "disabled": true,
       "name": "Comparison Section",
       "settings": {
         "background_color": "#fcfbf9",
@@ -213,7 +214,7 @@
           "type": "text",
           "settings": {
             "content": "<p>We built this razor because we were sick of the same tradeoff: either you get a close shave and your skin pays for it, or you back off and still feel stubble by lunch. We spent a long time obsessing over one thing, control. Not marketing control, real control in your hand at 7 a.m. when you're half awake and trying not to shred your skin.</p><p>A single blade, used the right way, is cleaner and more predictable than a stack of blades dragging over the same spot.</p><p>We are not going to pretend you will never nick yourself. It is a real blade. But with the right angle and no pressure, most guys notice the difference fast: less burn, fewer bumps, and a finish that actually looks sharp.</p>",
-            "mobile_content": "",
+            "mobile_content": "<p>The Problem You Know Too Well:<br/>Close shave = irritated skin<br/>Gentle shave = stubble by lunch<br/>We solved it.<br/><br/>SINGLE-BLADE PRECISION<br/>No dragging. No multi-pass damage. <br/>One clean cut at skin level.<br/>Result: Less burn. Fewer bumps. <br/>Sharper finish.</p>",
             "font_size": 18
           }
         }
@@ -257,7 +258,7 @@
           "type": "text",
           "settings": {
             "content": "<p>Metal in your hand. Weight. Balance. Something that doesn't flex, doesn't creak, doesn't feel disposable.</p><p>Our competitor's cartridge systems are designed to keep you buying. That is the business model. We built the opposite. A razor that can live on your counter for years, and all you swap is the blade. That is it.</p><p>If you've ever picked up a cheap handle and thought it feels like a toy, we get it. We refuse to ship anything that doesn't feel solid, simple, and ready for daily use.</p>",
-            "mobile_content": "",
+            "mobile_content": "<ul><li>All-metal construction</li><li>Balanced weight for control</li><li>No flex. No creaking.</li><li>Just swap the blade—keep the razor for life</li></ul><p>Their business model: Keep you buying cartridges<br/>Our model: Build it once, build it right<br/></p>",
             "font_size": 18
           }
         }
@@ -301,7 +302,7 @@
           "type": "text",
           "settings": {
             "content": "<p>This is one of those things you don't notice until you've dealt with the opposite for years. Clogged razors ruin the whole shave. You start pushing harder, you do extra passes, and your skin takes the hit.</p><p>We spent a significant amount of time making sure our razor rinses out quickly and stays consistent. When it clears fast, you shave with the same smooth feel from start to finish. It sounds small, but it changes the entire routine. Less stopping. Less scraping. Less frustration.</p>",
-            "mobile_content": "",
+            "mobile_content": "<p>Clogged razors = extra passes = irritated skin<br/>Our design clears fast.<br/>Same smooth shave, start to finish.<br/>Less stopping. Less scraping.</p>",
             "font_size": 18
           }
         }
@@ -345,7 +346,7 @@
           "type": "text",
           "settings": {
             "content": "<p>We’re putting this razor out into the world because we believe shaving should not feel like a punishment. If you deal with bumps, burn, or that tight, angry skin after, you are not broken. A lot of modern razors cause that by design: multiple blades, more friction, more passes, more irritation. This razor is our answer to that.</p><p>And yeah, we are proud of where this comes from. Veteran-owned. Built with a mission. We are not chasing trends, we are building something we would hand to our own guys and say, “Here. This works.”</p>",
-            "mobile_content": "",
+            "mobile_content": "<p>We’re putting this razor out into the world because we believe shaving should not feel like a punishment. If you deal with bumps, burn, or that tight, angry skin after, you are not broken. A lot of modern razors cause that by design: multiple blades, more friction, more passes, more irritation. This razor is our answer to that.</p>",
             "font_size": 18
           }
         }
