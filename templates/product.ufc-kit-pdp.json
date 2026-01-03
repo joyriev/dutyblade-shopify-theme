@@ -154,7 +154,7 @@
         "feature_cHGKPw": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_razor.png",
+            "icon_image": "shopify://shop_images/icons_respect.png",
             "title": "Discipline",
             "description": "Train daily. Shave weekly. No excuses."
           }
@@ -162,7 +162,7 @@
         "feature_qYJ3q7": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_support.png",
+            "icon_image": "shopify://shop_images/icons_grit.png",
             "title": "Grit",
             "description": "Built for men who show up when it hurts."
           }
@@ -170,8 +170,8 @@
         "feature_xJQxhW": {
           "type": "feature",
           "settings": {
-            "icon_image": "shopify://shop_images/icons_blades.png",
-            "title": "Honor",
+            "icon_image": "shopify://shop_images/icons_discipline.png",
+            "title": "Discipline",
             "description": "We respect those who step into the arena. Our word is our bond."
           }
         }
