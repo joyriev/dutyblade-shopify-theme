@@ -212,7 +212,7 @@
         "text_dqRtkj": {
           "type": "text",
           "settings": {
-            "content": "<p>For every Freedom Starter</p><p>Kit purchased, we donate a kit to a veteran in need through our partnership with Boulder Crest Foundation.</p><p>Your purchase makes a difference.</p>",
+            "content": "<p>For every Armor of Valor Kit purchased, we donate a kit to a veteran or first responder rebuilding at home through our community outreach partners.</p><p>Small routines restore dignity. </p><p>Your purchase helps a man reset with purpose.</p>",
             "mobile_content": "",
             "font_size": 18
           }
@@ -225,7 +225,7 @@
       "name": "Image and Text",
       "settings": {
         "background_color": "#ffffff",
-        "image": "shopify://shop_images/vet.png",
+        "image": "shopify://shop_images/christian_donation.png",
         "rounded_image": true,
         "image_placement": "0",
         "mobile_image_placement": "under_heading",
