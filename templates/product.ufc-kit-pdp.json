@@ -212,7 +212,7 @@
         "text_dqRtkj": {
           "type": "text",
           "settings": {
-            "content": "<p>For every Freedom Starter</p><p>Kit purchased, we donate a kit to a veteran in need through our partnership with Boulder Crest Foundation.</p><p>Your purchase makes a difference.</p>",
+            "content": "<p>For every Gladiator Edge Kit purchased, we donate a kit to an athlete or veteran grinding for a comeback through vetted gym community partners.</p><p>Discipline is built into the small routines. </p><p>Your purchase helps someone earn their next round.</p>",
             "mobile_content": "",
             "font_size": 18
           }
@@ -225,7 +225,7 @@
       "name": "Image and Text",
       "settings": {
         "background_color": "#ffffff",
-        "image": "shopify://shop_images/vet.png",
+        "image": "shopify://shop_images/boxing_donation.png",
         "rounded_image": true,
         "image_placement": "0",
         "mobile_image_placement": "under_heading",
