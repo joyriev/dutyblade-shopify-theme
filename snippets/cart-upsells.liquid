@@ -23,7 +23,7 @@
             , class: 'form'
             , novalidate: 'novalidate' -%}
 
-           {% if product.selected_or_first_available_variant. %}
+           {% if product.selected_or_first_available_variant.requires_selling_plan %}
             <input
               type="hidden"
               name="selling_plan"
