@@ -23,11 +23,11 @@
             , class: 'form'
             , novalidate: 'novalidate' -%}
 
-           {% if product.selected_or_first_available_variant.selling_plan_allocations.first.selling_plan_id %}
+           {% if product.selected_or_first_available_variant. %}
             <input
               type="hidden"
               name="selling_plan"
-              value="{{ product.selected_or_first_available_variant.selling_plan.id }}"
+              value="{{ product.selected_or_first_available_variant.selling_plan_allocations.first.selling_plan_id }}"
             >
           {% endif %}
 
