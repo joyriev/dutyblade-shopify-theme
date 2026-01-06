@@ -23,13 +23,13 @@
             , class: 'form'
             , novalidate: 'novalidate' -%}
 
-           {% if product.selected_or_first_available_variant.selling_plan %}
+           {% comment %} {% if product.selected_or_first_available_variant.selling_plan %} {% endcomment %}
             <input
               type="hidden"
               name="selling_plan"
-              value="{{ product.selected_or_first_available_variant.selling_plan_id }}"
+              value="{{ product.selected_or_first_available_variant.selling_plan }}"
             >
-          {% endif %}
+          {% comment %} {% endif %} {% endcomment %}
           
             <div class="grid !mb-0 grid-cols-4 border gap-4 border-solid border-gray-100 rounded-lg p-3 items-center bg-white">
               <img
