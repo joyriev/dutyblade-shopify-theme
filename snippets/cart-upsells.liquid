@@ -23,13 +23,13 @@
             , class: 'form'
             , novalidate: 'novalidate' -%}
 
-           {% comment %} {% if product.selected_or_first_available_variant.selling_plan %} {% endcomment %}
+           {% if product.selected_or_first_available_variant.requires_selling_plan %}
             <input
               type="hidden"
               name="selling_plan"
               value="{{ product.selected_or_first_available_variant.selling_plan.id }}"
             >
-          {% comment %} {% endif %} {% endcomment %}
+          {% endif %}
 
           <div style="display: none;">
             {{ product.variants | json }}
