@@ -27,7 +27,7 @@
             <input
               type="hidden"
               name="selling_plan"
-              value="{{ product.selected_or_first_available_variant | json }}"
+              value="{{ product.selected_or_first_available_variant.selling_plan.id }}"
             >
           {% comment %} {% endif %} {% endcomment %}
           
