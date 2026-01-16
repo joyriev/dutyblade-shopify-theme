@@ -89,11 +89,10 @@
         },
         "collapsible_tab_T6Fk9z": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "🔄 Return & Refund Policy",
+            "heading": "One Purchased, One Donated",
             "icon": "none",
-            "content": "<p>Not satisfied? No problem. We provide a hassle-free 100-day return policy and a full refund if you’re not completely happy with your shave. Just reach out to our support team to start the process.</p>",
+            "content": "<p>Our new initiative: For every Patriot Shave razor purchased, we donate a razor to a fellow American in need.<br/></p>",
             "page": ""
           }
         },
