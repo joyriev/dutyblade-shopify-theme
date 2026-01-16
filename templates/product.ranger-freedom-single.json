@@ -32,6 +32,7 @@
         },
         "delivery_deadline_CQHJwz": {
           "type": "delivery_deadline",
+          "disabled": true,
           "settings": {
             "date_text": "Want it by [DATE]?",
             "days": 2,
