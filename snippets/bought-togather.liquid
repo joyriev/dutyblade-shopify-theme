@@ -1,0 +1,102 @@
+{% assign product_handles = 'ranger-freedom-starter-kit,ranger-blade,ranger-core-sandalwood-shave-foam' | split: ',' %}
+{% assign final_price = 0 %}
+
+<div class="pt-14">
+  <div class="text-center">
+    <h2 class="font-bold my-0">Complete Your Shaving Routine</h2>
+    <p class="mt-2 mb-6">Everything you need for a close, comfortable shave.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-4 gap-y-4 md:gap-y-0">
+    <div class="col-span-2 flex flex-col md:flex-row gap-3 md:gap-6">
+      {% for pd_handle in product_handles %}
+        {% assign item = all_products[pd_handle] %}
+        {% if item %}
+          <div class="bg-white shadow-sm rounded-lg p-3 md:p-4 flex items-center md:flex-col gap-4">
+            <img
+              class="w-[80px] md:w-full h-auto"
+              src="{{ item.images.first.src | image_url: width: 350 }}"
+              alt="{{ item.title }}"
+              width="350"
+              height="350">
+            <div class="w-full">
+              <h3 class="mt-0 mb-2 text-base leading-tight font-semibold">
+                {{ item.title }}
+              </h3>
+              <p class="my-0 font-semibold text-base">{{ item.price | money }}</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="col-span-1 flex flex-col">
+      <div class="flex-grow bg-white shadow-sm rounded-lg p-4 md:p-6 flex flex-col gap-3">
+        <div class="flex-grow flex flex-col gap-2 pb-4">
+          {% for pd_handle in product_handles %}
+            {% assign item = all_products[pd_handle] %}
+            {% if item %}
+              <div class="flex justify-between items-center gap-4">
+                <span class="text-base text-black">{{ item.title }}</span>
+                <span>{{ item.price | money }}</span>
+              </div>
+              {% assign final_price = final_price | plus: item.price %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="px-4 py-2 rounded-lg bg-sky-50 flex justify-between items-center gap-4">
+          <span class="text-base font-semibold">Subtotal</span>
+          <span>{{ final_price | money }}</span>
+        </div>
+        <button id="fbtDoCheckoutBtn" class="bg-black text-white uppercase text-sm font-semibold tracking-[2px] py-3 px-4 rounded-lg no-underline w-full text-center block cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">SHOP NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('fbtDoCheckoutBtn');
+        if (btn) {
+            btn.addEventListener('click', function(event) {
+                event.preventDefault();
+                btn.innerHTML = 'Processing...';
+                btn.setAttribute('disabled', 'disabled');
+
+                const payload = {
+                    items: [
+                        {% for pd_handle in product_handles %}
+                        {% assign item = all_products[pd_handle] %}
+                        {% if item %}
+                        {
+                            id: {{ item.selected_or_first_available_variant.id }},
+                            {%  if item.variants.first.requires_selling_plan %} selling_plan: 692318896495, {% endif %}
+                            quantity: 1
+                        }{% unless forloop.last %},{% endunless %}
+                        {% endif %}
+                        {% endfor %}
+                    ]
+                };
+               
+                fetch('/cart/add.js', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                })
+                .then(res => {
+                    if (!res.ok) throw new Error('Add to cart failed');
+                    return res.json();
+                })
+                .then(() => {
+                    window.location.href = '/checkout';
+                })
+                .catch(err => {
+                    console.error(err);
+                    btn.textContent = 'SHOP NOW';
+                    btn.disabled = false;
+                });
+            });
+        }
+    });
+</script>

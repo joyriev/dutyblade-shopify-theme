@@ -930,6 +930,11 @@
     <script type="application/ld+json">
       {{ product | structured_data }}
     </script>
+
+    {% if product.handle == "ranger-freedom-starter-kit" %}
+      {% render 'bought-togather' %}
+    {% endif %}
+
   </div>
 </product-info>
 
