@@ -22,9 +22,27 @@
             "custom_liquid": "<!-- Start of Judge.me code --> \n  <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'> \n    {{ product.metafields.judgeme.badge }} \n  </div> \n<!-- End of Judge.me code -->"
           }
         },
-        "reactive_atc_LBDQE9": {
-          "type": "reactive_atc",
+        "variant_picker_n4eaYn": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "price_NRXzeE": {
+          "type": "price",
           "settings": {}
+        },
+        "appstle_subscription_appstle_subscription_product_page_widget_pMRxAm": {
+          "type": "shopify://apps/appstle-subscription/blocks/appstle-subscription-product-page-widget/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+          "settings": {}
+        },
+        "buy_buttons_3bw9rq": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
         },
         "payment_badges_FkCwVc": {
           "type": "payment_badges",
@@ -123,7 +141,10 @@
       "block_order": [
         "title_DkyBTh",
         "custom_liquid_yLNzLq",
-        "reactive_atc_LBDQE9",
+        "variant_picker_n4eaYn",
+        "price_NRXzeE",
+        "appstle_subscription_appstle_subscription_product_page_widget_pMRxAm",
+        "buy_buttons_3bw9rq",
         "payment_badges_FkCwVc",
         "delivery_deadline_CQHJwz",
         "icon_with_text_ytpGUH",
