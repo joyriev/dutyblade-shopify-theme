@@ -52,19 +52,17 @@
     <div class="price__sale price__price-first" x-data>
       <span class="visually-hidden visually-hidden--inline">Regular price</span>
       <span>
-        <s class="price-item price-item--regular" x-text="$store.pdpExtra.getCompareAtPrice"></s>
+        <s class="price-item price-item--regular" x-text="$store.pdpExtra.getPrice('compareAtPrice')"></s>
       </span>
       <span class="visually-hidden visually-hidden--inline">Sale price</span>
-      <span class="price-item price-item--sale price-item--last" x-text="$store.pdpExtra.getPrice">
-        Tk 2,300.00
-      </span>
+      <span class="price-item price-item--sale price-item--last" x-text="$store.pdpExtra.getPrice('price')"></span>
     </div>
   </div>
 </div>
 
 <product-form
   class="product-form"
-  data-hide-errors="{{ gift_card_recipient_feature_active }}"
+  data-hide-errors=""
   data-section-id="{{ section.id }}">
   {%- form 'product'
     , product
@@ -95,6 +93,158 @@
   {%- endform -%}
 </product-form>
 
+<div class="text-center relative pt-6 !mb-6 border-0 border-b border-gray-200 border-solid">
+  <span class="bg-[#f3f3f7] absolute left-1/2 [transform:translateX(-50%)] -bottom-4">Multi-Pack Discount</span>
+</div>
+
+<div x-data class="flex flex-col gap-2">
+  <button
+    @click="$store.pdpExtra.quantity = 2"
+    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white"
+    :class="$store.pdpExtra.quantity === 2 ? 'border-[#0F172A]' : 'border-gray-300'">
+    <div class="shrink-0 size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
+      <span x-show="$store.pdpExtra.quantity === 2" class="block size-4 rounded-full bg-[#0F172A]"></span>
+    </div>
+    <div class="text-left space-y-1">
+      <h3 class="my-0 text-base font-semibold">Buy 2 Kits
+      </h3>
+      <p class="my-0 text-gray-600">
+        Get 12% off each kit
+      </p>
+    </div>
+    <div class="ml-auto text-right">
+      <div class="text-base">
+        <span class="line-through text-sm" x-text="$store.pdpExtra.getPrice('price')"></span>
+        <span class="font-semibold" x-text="$store.pdpExtra.getPrice('2KitPrice')"></span>
+        each
+      </div>
+      <div class="text-sm text-green-600">
+        You save
+        <span x-text="$store.pdpExtra.getPrice('2KitSaveAmount')"></span>
+        per kit
+      </div>
+    </div>
+  </button>
+  <button
+    @click="$store.pdpExtra.quantity = 3"
+    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white"
+    :class="$store.pdpExtra.quantity === 3 ? 'border-[#0F172A]' : 'border-gray-300'">
+    <div class="shrink-0 size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
+      <span x-show="$store.pdpExtra.quantity === 3" class="block size-4 rounded-full bg-[#0F172A]"></span>
+    </div>
+    <div class="text-left space-y-1">
+      <h3 class="my-0 text-base font-semibold">Buy 3 Kits
+      </h3>
+      <p class="my-0 text-gray-600">
+        Get 16% off each kit
+      </p>
+    </div>
+    <div class="ml-auto text-right">
+      <div class="text-base">
+        <span class="line-through text-sm" x-text="$store.pdpExtra.getPrice('price')"></span>
+        <span class="font-semibold" x-text="$store.pdpExtra.getPrice('3KitPrice')"></span>
+        each
+      </div>
+      <div class="text-sm text-green-600">
+        You save
+        <span x-text="$store.pdpExtra.getPrice('3KitSaveAmount')"></span>
+        per kit
+      </div>
+    </div>
+  </button>
+  <button
+    @click="$store.pdpExtra.quantity = 4"
+    class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white"
+    :class="$store.pdpExtra.quantity === 4 ? 'border-[#0F172A]' : 'border-gray-300'">
+    <div class="shrink-0 size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
+      <span x-show="$store.pdpExtra.quantity === 4" class="block size-4 rounded-full bg-[#0F172A]"></span>
+    </div>
+    <div class="text-left space-y-1">
+      <h3 class="my-0 text-base font-semibold">Buy 4 Kits
+      </h3>
+      <p class="my-0 text-gray-600">
+        Get 18% off each kit
+      </p>
+    </div>
+    <div class="ml-auto text-right">
+      <div class="text-base">
+        <span class="line-through text-sm" x-text="$store.pdpExtra.getPrice('price')"></span>
+        <span class="font-semibold" x-text="$store.pdpExtra.getPrice('4KitPrice')"></span>
+        each
+      </div>
+      <div class="text-sm text-green-600">
+        You save
+        <span x-text="$store.pdpExtra.getPrice('4KitSaveAmount')"></span>
+        per kit
+      </div>
+    </div>
+  </button>
+  <div class="pt-6 relative">
+    <div class="absolute top-0 right-1 text-white text-xs leading-snug px-2 py-1 uppercase bg-[#0F172A]">Best Value</div>
+    <button
+      @click="$store.pdpExtra.quantity = 5"
+      class="border-2 border-solid cursor-pointer p-3 flex gap-4 items-center bg-white w-full"
+      :class="$store.pdpExtra.quantity === 5 ? 'border-[#0F172A]' : 'border-gray-300'">
+      <div class="shrink-0 size-6 flex items-center justify-center rounded-full border-2 border-solid border-[#0F172A]">
+        <span x-show="$store.pdpExtra.quantity === 5" class="block size-4 rounded-full bg-[#0F172A]"></span>
+      </div>
+      <div class="text-left space-y-1">
+        <h3 class="my-0 text-base font-semibold">Buy 5 Kits
+        </h3>
+        <p class="my-0 text-gray-600">
+          Get 20% off each kit
+        </p>
+      </div>
+      <div class="ml-auto text-right">
+        <div class="text-base">
+          <span class="line-through text-sm" x-text="$store.pdpExtra.getPrice('price')"></span>
+          <span class="font-semibold" x-text="$store.pdpExtra.getPrice('5KitPrice')"></span>
+          each
+        </div>
+        <div class="text-sm text-green-600">
+          You save
+          <span x-text="$store.pdpExtra.getPrice('5KitSaveAmount')"></span>
+          per kit
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+
+<product-form
+  class="product-form"
+  data-hide-errors=""
+  data-section-id="{{ section.id }}">
+  {%- form 'product'
+    , product
+    , id: product.id
+    , class: 'form'
+    , novalidate: 'novalidate'
+    , data-type: 'add-to-cart-form'
+  -%}
+    <input
+      x-data
+      type="hidden"
+      name="id"
+      id="product-variant-id"
+      :value="$store.pdpExtra.selectedVariant"
+      class="product-variant-id">
+    <input
+      x-data
+      type="hidden"
+      name="quantity"
+      :value="$store.pdpExtra.quantity">
+    <button
+      type="submit"
+      name="add"
+      class="hidden_product_form_submit button button--full-width shadow-xl"
+      aria-label="Add to cart">
+      <span>ADD TO CART</span>
+      {%- render 'loading-spinner' -%}
+    </button>
+  {%- endform -%}
+</product-form>
+
 <ul class="list-none p-0 flex justify-center flex-wrap gap-x-4">
   <li>
     ✓ 100-Day Money-Back Guarantee</li>
@@ -107,18 +257,6 @@
 </ul>
 
 <script>
-
-  const pdVariants = [
-    {% for variant in product.variants %}
-      {
-        id: "{{ variant.id }}",
-        name: "{{ variant.title }}",
-        image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 750 }}{% endif %}",
-        price: "{{ variant.price | money }}",
-        compareAtPrice: "{{ variant.compare_at_price | money }}"
-      },
-    {% endfor %}
-  ];
 
   function prefetchVariantImages(variants) {
     if (!Array.isArray(variants)) return;
@@ -140,17 +278,34 @@
     prefetchVariantImages(pdVariants);
   });
 
+  const pdVariants = [
+    {% for variant in product.variants %}
+      {
+        id: "{{ variant.id }}",
+        name: "{{ variant.title }}",
+        image: "{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 750 }}{% endif %}",
+        price: "{{ variant.price | money }}",
+        compareAtPrice: "{{ variant.compare_at_price | money }}",
+        "2KitPrice": "{{ variant.price | times: 0.88 | money }}",
+        "2KitSaveAmount": "{{ variant.price | times: 0.12 | money }}",
+        "3KitPrice": "{{ variant.price | times: 0.84 | money }}",
+        "3KitSaveAmount": "{{ variant.price | times: 0.16 | money }}",
+        "4KitPrice": "{{ variant.price | times: 0.82 | money }}",
+        "4KitSaveAmount": "{{ variant.price | times: 0.18 | money }}",
+        "5KitPrice": "{{ variant.price | times: 0.8 | money }}",
+        "5KitSaveAmount": "{{ variant.price | times: 0.2 | money }}"
+      },
+    {% endfor %}
+  ];
+
   document.addEventListener('alpine:init', () => {
     Alpine.store('pdpExtra', {
       selectedVariant: "{{ selected_variant.id }}",
       option1: "{{ selected_variant.option1 }}",
-      get getPrice () { 
+      quantity: 5,
+      getPrice ( priceKey ) { 
         const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
-        return matchedVariant.price
-      },
-      get getCompareAtPrice () {
-        const matchedVariant = pdVariants.find(variant => variant.name.includes(this.option1));
-        return matchedVariant.compareAtPrice
+        return matchedVariant[priceKey];
       }
     });
     Alpine.effect(() => {
