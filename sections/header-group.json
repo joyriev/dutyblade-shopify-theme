@@ -17,7 +17,7 @@
         "announcement_MtPMaU": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping on Orders above $35",
+            "text": "Free Shipping on Orders above $35+",
             "link": ""
           }
         }
