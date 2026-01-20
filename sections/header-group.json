@@ -25,6 +25,9 @@
       "block_order": [
         "announcement_MtPMaU"
       ],
+      "custom_css": [
+        ".announcement-bar__message {font-size: 20px;}"
+      ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
         "color_scheme": "scheme-5",
