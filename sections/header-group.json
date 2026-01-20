@@ -11,6 +11,31 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "announcement_bar_H4kiCg": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_MtPMaU": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping on Orders above $35",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_MtPMaU"
+      ],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
     "blocky_lys_scrolling_text_bar_GLkKNr": {
       "type": "blocky-lys-scrolling-text-bar",
       "blocks": {
@@ -38,6 +63,7 @@
         "text_DiPtyi",
         "text_KwnK4Y"
       ],
+      "disabled": true,
       "settings": {
         "text_size": "1.75",
         "background_color": "#0f172a",
@@ -69,6 +95,7 @@
     }
   },
   "order": [
+    "announcement_bar_H4kiCg",
     "blocky_lys_scrolling_text_bar_GLkKNr",
     "header"
   ]
