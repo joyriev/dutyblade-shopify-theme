@@ -41,6 +41,10 @@
     },
     "header_review_text": {
       "type": "header-review-text",
+      "settings": {
+        "text": "3800+ Reviews →",
+        "url": "shopify://pages/happy-customers"
+      }
     },
     "blocky_lys_scrolling_text_bar_GLkKNr": {
       "type": "blocky-lys-scrolling-text-bar",
