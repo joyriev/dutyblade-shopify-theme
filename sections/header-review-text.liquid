@@ -1,6 +1,6 @@
-<div class="bg-black text-white">
+<div class="bg-[#0f172a] text-white py-2">
   <div class="page-width">
-    <div class="flex items-center justify-center gap-2">
+    <a href="{{ section.settings.url }}" class="flex items-center justify-center gap-2 no-underline text-white text-lg">
       <img
         src="{{ 'rating-stars.svg' |  asset_url }}"
         alt="*****"
@@ -9,7 +9,7 @@
       <span>
         {{ section.settings.text }}
       </span>
-    </div>
+    </a>
   </div>
 </div>
 {% schema %}
@@ -21,6 +21,10 @@
         "id": "text",
         "label": "Text",
         "default": "3800+ Reviews →"
+      }, {
+        "type": "url",
+        "id": "url",
+        "label": "Link"
       }
     ],
     "presets": [

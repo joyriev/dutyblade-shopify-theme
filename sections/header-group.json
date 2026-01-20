@@ -39,6 +39,9 @@
         "enable_language_selector": false
       }
     },
+    "header_review_text": {
+      "type": "header-review-text",
+    },
     "blocky_lys_scrolling_text_bar_GLkKNr": {
       "type": "blocky-lys-scrolling-text-bar",
       "blocks": {
@@ -105,6 +108,7 @@
   },
   "order": [
     "announcement_bar_H4kiCg",
+    "header_review_text",
     "blocky_lys_scrolling_text_bar_GLkKNr",
     "header",
     "1768917501f75e9bb9"
