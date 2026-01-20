@@ -113,20 +113,13 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "17689175207e8dbc89": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "announcement_bar_H4kiCg",
-    "17689175207e8dbc89",
+    "1768917508b91eaf02",
     "blocky_lys_scrolling_text_bar_GLkKNr",
     "header",
-    "1768917501f75e9bb9",
-    "1768917508b91eaf02"
+    "1768917501f75e9bb9"
   ]
 }
