@@ -1,0 +1,32 @@
+<div class="bg-black text-white">
+  <div class="page-width">
+    <div class="flex items-center justify-center gap-2">
+      <img
+        src="{{ 'rating-stars.svg' |  asset_url }}"
+        alt="*****"
+        height="16"
+        width="80">
+      <span>
+        {{ section.settings.text }}
+      </span>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Header Review Text",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "3800+ Reviews →"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Header Review Text"
+      }
+    ]
+  }
+{% endschema %}
