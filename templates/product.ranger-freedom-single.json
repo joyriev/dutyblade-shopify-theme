@@ -95,6 +95,7 @@
         },
         "collapsible_tab_T6Fk9z": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "One Purchased, One Donated",
             "icon": "none",
